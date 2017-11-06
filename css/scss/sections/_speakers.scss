@@ -1,0 +1,36 @@
+/*----------- Speakers Section Styles -----------*/
+.speakers {
+  padding-top: $x-large + $medium;
+}
+.speaker-card {
+  max-width: 263px;
+  @extend %card;
+  .speaker-info {
+    padding: $mini $micro;
+    @include clearfix();
+    .speaker-social {
+      text-align: right;
+      :last-child {
+        margin-right: 0;
+      }
+      a {
+        color: $dark-2;
+        margin-right: $micro/4;
+        vertical-align: middle;
+        @include transition(all .2s ease-in-out);
+        &:hover {
+          color: $accent;
+        }
+      }
+    }
+  }
+  .speaker-description {
+    text-align: left;
+    padding: 0 $micro $mini;
+    font-style: italic;
+  }
+  @include respond-to(laptop) {
+    margin: 0 auto $medium;
+  }
+}
+/*----------- Speakers Section End -----------*/

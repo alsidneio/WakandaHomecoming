@@ -1,0 +1,170 @@
+/*----------- Form Styles -----------*/
+/* Subscription Form Mailchimp */
+.subscription-form {
+  .subscription-failure,
+  .subscription-success {
+    margin-bottom: $small;
+    display: inline-block;
+    color: $light-1;
+    a {
+      text-decoration: none;
+      color: $dark-1;
+    }
+  }
+  .input-box {
+    height: $medium;
+    width: 336px;
+    padding-left: $mini;
+    margin-right: $micro;
+    border-radius: 0;
+    border: none;
+    font-size: $baes-font-size;
+    line-height: 1;
+    font-style: italic;
+    background: $light-1;
+    color: $accent;
+    @include transition(all 0.1s ease-in-out);
+    &:active,
+    &:focus {
+      outline: none;
+      box-shadow: none;
+      border: none;
+    }
+  }
+  @include respond-to(tablet) {
+    .input-box {
+      width: 80%;
+      margin: 0 auto $mini;
+    }
+  }
+  @include respond-to(phone) {
+    .input-box {
+      width: 85%;
+    }
+  }
+  @include respond-to(sphone) {
+    .input-box {
+      width: 90%;
+    }
+  }
+}
+/* Contact Form */
+.contact-form {
+  .email-failed,
+  .email-success {
+    display: none;
+    margin: $micro 0;
+    color: $accent;
+    @include transition(all .2s ease-in-out);
+  }
+  .input-box,
+  .textarea-box {
+    padding: $micro $mini;
+    margin-bottom: $mini;
+    border: 1px solid $stroke;
+    border-radius: 0;
+    font-size: $baes-font-size;
+    font-style: italic;
+    background: transparent;
+    @include transition(all 0.1s ease-in-out);
+    &:active,
+    &:focus {
+      outline: 0;
+      box-shadow: none;
+      border: 1px solid $dark-1;
+    }
+  }
+  .input-box {
+    height: $medium;
+  }
+}
+/* Contact Form End */
+/* Registration Modal */
+.register-modal {
+  .modal-dialog {
+    width: $x-large*6;
+    margin: 0 auto;
+    @include respond-to(phone) {
+      width: 80%;
+      .modal-body{
+        padding: $micro $micro/2;
+      }
+    }
+    @include respond-to(sphone) {
+      width: 90%;
+      .modal-body{
+        padding: $micro $micro/4;
+      }
+    }
+  }
+  .modal-content {
+    border-radius: 0;
+    @extend %card;
+    margin-top: $xx-large;
+  }
+  .modal-header {
+    padding: $micro;
+    border: none;
+    .close {
+      color: $dark-1;
+      opacity: 1;
+      font-size: rem($mini);
+      @include transition(all 0.1s ease-in-out);
+      &:hover {
+        color: $accent;
+      }
+    }
+    .modal-title {
+      margin-top: $micro;
+      margin-left: $mini;
+    }
+  }
+  .modal-body {
+    padding: $mini $micro;
+    .content {
+      .modal-register {
+        width: 80%;
+        margin: 0 auto;
+        .register-failed,
+        .register-success {
+          margin-bottom: $micro/2;
+          color: $accent;
+          display: none;
+          @include transition(all .2s ease-in-out);
+        }
+        .combo-box,
+        .input-box {
+          height: $medium;
+          padding: $micro $mini;
+          margin-bottom: $mini;
+          border: 1px solid $stroke;
+          border-radius: 0;
+          font-size: $baes-font-size;
+          font-style: italic;
+          background: transparent;
+          @include transition(all 0.1s ease-in-out);
+          &:active,
+          &:focus {
+            outline: 0;
+            box-shadow: none;
+            border: 1px solid $dark-1;
+          }
+        }
+        .combo-box {
+          padding: $micro/2 $mini;
+        }
+        label {
+          margin-bottom: $micro/2;
+          font-weight: 400;
+          color: $dark-1;
+        }
+      }
+    }
+  }
+  .modal-footer {
+    border: none;
+    text-align: center;
+  }
+}
+/* Registration Modal End */
+/*----------- Form Styles End -----------*/

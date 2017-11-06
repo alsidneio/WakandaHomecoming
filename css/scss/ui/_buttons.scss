@@ -1,0 +1,74 @@
+/*----------- Button Styles -----------*/
+.button-primary {
+  display: inline-block;
+  padding: $micro 20px;
+  font-weight: 700;
+  vertical-align: middle;
+  color: $light-1;
+  background-color: $dark-1;
+  @include transition(all .3s ease-in-out);
+  &:active,
+  &:focus,
+  &:hover {
+    background-color: $light-1;
+    color: $dark-1;
+  }
+}
+.button-video {
+  img {
+    width: $large;
+  }
+}
+.button-timeline {
+  display: inline-block;
+  padding: $micro/2 20px;
+  vertical-align: middle;
+  color: $light-1;
+  background-color: $accent;
+  @include transition(all .3s ease-in-out);
+  &:active,
+  &:focus,
+  &:hover {
+    color: $light-1;
+    background-color: $dark-1;
+  }
+}
+.button-sub {
+  padding: 0 20px;
+  border: none;
+  height: $medium;
+  vertical-align: middle;
+}
+.button-price-table {
+  padding: $micro/2 20px;
+  &:active,
+  &:focus,
+  &:hover {
+    color: $light-1;
+    background: $accent;
+  }
+}
+.button-cta {
+  padding: $micro 40px;
+  background: $accent;
+}
+.button-sponsors {
+  &:active,
+  &:focus,
+  &:hover {
+    color: $light-1;
+    background: $accent;
+  }
+}
+.button-form {
+  border: none;
+  padding: $micro 20px;
+  border-radius: 0;
+  &:active,
+  &:focus,
+  &:hover {
+    color: $light-1;
+    background: $accent;
+  }
+}
+/*----------- Button Styles End -----------*/

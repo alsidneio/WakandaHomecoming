@@ -1,0 +1,98 @@
+/*----------- Hero Banner Styles -----------*/
+.hero {
+  padding-top: $large;
+  position: relative;
+  background-image: url("../img/header-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  .hero-content {
+    height: 100%;
+    padding-bottom: $x-large*2;
+    position: relative;
+    z-index: 1;
+  }
+  .logo {
+    margin-bottom: $x-large;
+  }
+  .date-venue {
+    display: inline-block;
+    padding: $micro/2 40px;
+    margin-bottom: $small;
+    background-color: $light-1;
+    color: $accent;
+  }
+  .intro {
+    margin-bottom: $x-large;
+    h1,
+    p {
+      color: $light-1;
+    }
+    h1 {
+      margin: 0 0 $small;
+    }
+  }
+  .cta {
+    margin-bottom: $x-large;
+    .hero-video-subscription {
+      margin-top: $medium;
+    }
+  }
+  .countdown-card {
+    @extend %card;
+    width: 480px;
+    position: absolute;
+    bottom: -$medium;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    padding: $medium;
+    background: $light-1;
+    .card-title {
+      margin-bottom: $medium;
+      h6 {
+        color: $dark-2;
+      }
+    }
+    .event-countdown {
+      list-style-type: none;
+      margin: 0 auto;
+      padding: 0;
+      :last-child {
+        margin-right: 0;
+      }
+      li {
+        display: inline-block;
+        margin-right: $medium;
+        span {
+          margin-bottom: $micro;
+        }
+        @include respond-to(phone) {
+          margin-right: $mini;
+          span{
+            font-size: rem($micro);
+          }
+        }
+        @include respond-to(sphone) {
+          margin-right: $micro;
+        }
+      }
+    }
+    @include respond-to(phone) {
+      width: 95%;
+      padding: $mini;
+      .card-title{
+        margin-bottom: $mini;
+      }
+      @include respond-to(sphone) {
+        padding: $mini $micro;
+      }
+    }
+  }
+  @include respond-to(tablet) {
+    h1{
+      font-size: rem($medium);
+    }
+  }
+}
+/*----------- Hero Banner Styles End -----------*/

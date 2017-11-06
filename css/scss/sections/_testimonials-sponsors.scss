@@ -1,0 +1,67 @@
+/*----------- Testimonials Styles -----------*/
+.testimonials {
+  .testimonial-carousel {
+    :last-child {
+      margin-right: 0;
+    }
+    .testimonial-card {
+      @extend %card;
+      padding: $small;
+      margin: 0 $mini/2 $mini;
+      .testimonial-img {
+        margin-bottom: $micro;
+        img {
+          border-radius: 50%;
+          @include size($large);
+        }
+      }
+      .testimonial-name {
+        margin-bottom: $small;
+      }
+      .testimonial-comment {
+        font-style: italic;
+      }
+    }
+  }
+}
+/* Owl Carousel Custom Styles */
+.grabbing {
+  cursor: url("../img/grabbing.png") 8 8, move;
+}
+.owl-theme .owl-controls .owl-page span{
+  @include size($micro);
+  background: $stroke;
+}
+.owl-theme .owl-controls .owl-page.active span, .owl-theme .owl-controls.clickable .owl-page:hover span {
+  background: $dark-2;
+}
+.owl-item.loading{
+	min-height: 150px;
+	background: url("../img/AjaxLoader.gif") no-repeat center center
+}
+/*----------- Testimonials Styles End -----------*/
+/*----------- Sponsors Styles -----------*/
+.sponsors {
+  .first-row {
+    border-bottom: 1px solid $stroke;
+  }
+  .second-row {
+    margin-bottom: $large;
+  }
+  .first-column,
+  .second-column {
+    border-right: 1px solid $stroke;
+  }
+  .sponsor-img {
+    padding: $x-large 0;
+    @include respond-to(laptop) {
+      padding: $medium 0;
+    }
+  }
+  .first-row,.first-column,.second-column {
+    @include respond-to(laptop) {
+      border: none;
+    }
+  }
+}
+/*----------- Sponsors Styles End -----------*/

@@ -1,0 +1,1404 @@
+/**
+ *
+ * Template name : Eventster
+   Author : Pankaj Chakraborty <author@paperboatdesigns.co>
+   Version : 1.0.1
+   Last Change : 1.0.1
+ *
+ */
+
+
+/*=============================================>>>>>
+= Global Styles =
+===============================================>>>>>*/
+
+html {
+  font-size: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+/* Border Box Fix */
+
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+
+/* Selection Color */
+
+::-moz-selection {
+  background-color: #ff512f;
+  color: #ffffff;
+}
+
+::selection {
+  background-color: #ff512f;
+  color: #ffffff;
+}
+
+body {
+  background-color: #f6f6f8;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #6b7684;
+  text-align: center;
+  overflow-x: hidden;
+}
+
+
+/* Typography */
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Roboto Slab", serif;
+  color: #20202f;
+  line-height: 1.1;
+  font-weight: normal;
+  margin: 0;
+}
+
+h1 {
+  font-size: 3.5rem;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+h3 {
+  font-size: 2.5rem;
+}
+
+h4 {
+  font-size: 2rem;
+}
+
+h5 {
+  font-size: 1.5rem;
+}
+
+h6 {
+  font-size: 1rem;
+}
+
+p {
+  margin: 0;
+}
+
+
+/* Buttons and Links Global */
+
+a:active, a:focus, a:hover, button:active, button:focus, button:hover {
+  outline: 0 !important;
+  text-decoration: none;
+  box-shadow: none;
+}
+
+
+/* Section Styles Global */
+
+section {
+  padding: 80px 0;
+  border-bottom: 1px solid #e0dfe6;
+}
+
+@media only screen and (max-width: 767px) {
+  section {
+    padding: 64px 0;
+  }
+}
+
+.section-heading {
+  margin-bottom: 64px;
+}
+
+.section-heading span {
+  font-size: 2rem;
+  color: #ff512f;
+  margin-bottom: 16px;
+}
+
+
+/*----------- Preloader -----------*/
+
+.preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #20202f;
+  z-index: 99999;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.pulse {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-top: -32px;
+  margin-left: -32px;
+  width: 64px;
+  height: 64px;
+  text-align: center;
+  background-color: #ff512f;
+  border-radius: 100%;
+  -webkit-animation: pulse 1s infinite ease-in-out;
+  -moz-animation: pulse 1s infinite ease-in-out;
+  animation: pulse 1s infinite ease-in-out;
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-transform: scale(0);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    opacity: 0;
+  }
+}
+
+@keyframes pulse {
+  0% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 0;
+  }
+}
+
+
+/*----------- Preloader Styles End -----------*/
+
+
+/*----------- Miscelleneous Styles -----------*/
+
+.register-modal .modal-content, .hero .countdown-card, .speaker-card, .timeline ul li div, .venue .venue-card, .hotels .hotel-card, .testimonials .testimonial-carousel .testimonial-card, .pricing .price-table, .contact .contact-card {
+  background-color: #ffffff;
+  -webkit-box-shadow: 0 0 16px 0 rgba(32, 32, 47, 0.16);
+  -moz-box-shadow: 0 0 16px 0 rgba(32, 32, 47, 0.16);
+  box-shadow: 0 0 16px 0 rgba(32, 32, 47, 0.16);
+}
+
+.schedule, .schedule-multiday, .venue, .pricing, .final-cta, .contact {
+  border-bottom: none;
+}
+
+.hotels .hotel-card-1, .hotels .hotel-card-2, .hotels .hotel-card-3, .hotels .hotel-card-4 {
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-size: cover;
+}
+
+
+/*----------- Miscelleneous Styles End -----------*/
+
+
+/*=============================================>>>>>
+= Global Styles End =
+===============================================>>>>>*/
+
+
+/*=============================================>>>>>
+= UI- Styles =
+===============================================>>>>>*/
+
+
+/*----------- Button Styles -----------*/
+
+.button-primary {
+  display: inline-block;
+  padding: 16px 20px;
+  font-weight: 700;
+  vertical-align: middle;
+  color: #ffffff;
+  background-color: #20202f;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.button-primary:active, .button-primary:focus, .button-primary:hover {
+  background-color: #ffffff;
+  color: #20202f;
+}
+
+.button-video img {
+  width: 64px;
+}
+
+.button-timeline {
+  display: inline-block;
+  padding: 8px 20px;
+  vertical-align: middle;
+  color: #ffffff;
+  background-color: #ff512f;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.button-timeline:active, .button-timeline:focus, .button-timeline:hover {
+  color: #ffffff;
+  background-color: #20202f;
+}
+
+.button-sub {
+  padding: 0 20px;
+  border: none;
+  height: 48px;
+  vertical-align: middle;
+}
+
+.button-price-table {
+  padding: 8px 20px;
+}
+
+.button-price-table:active, .button-price-table:focus, .button-price-table:hover {
+  color: #ffffff;
+  background: #ff512f;
+}
+
+.button-cta {
+  padding: 16px 40px;
+  background: #ff512f;
+}
+
+.button-sponsors:active, .button-sponsors:focus, .button-sponsors:hover {
+  color: #ffffff;
+  background: #ff512f;
+}
+
+.button-form {
+  border: none;
+  padding: 16px 20px;
+  border-radius: 0;
+}
+
+.button-form:active, .button-form:focus, .button-form:hover {
+  color: #ffffff;
+  background: #ff512f;
+}
+
+
+/*----------- Button Styles End -----------*/
+
+
+/*----------- Form Styles -----------*/
+
+
+/* Subscription Form Mailchimp */
+
+.subscription-form .subscription-failure, .subscription-form .subscription-success {
+  margin-bottom: 32px;
+  display: inline-block;
+  color: #ffffff;
+}
+
+.subscription-form .subscription-failure a, .subscription-form .subscription-success a {
+  text-decoration: none;
+  color: #20202f;
+}
+
+.subscription-form .input-box {
+  height: 48px;
+  width: 336px;
+  padding-left: 24px;
+  margin-right: 16px;
+  border-radius: 0;
+  border: none;
+  font-size: 16px;
+  line-height: 1;
+  font-style: italic;
+  background: #ffffff;
+  color: #ff512f;
+  -webkit-transition: all 0.1s ease-in-out;
+  -moz-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+}
+
+.subscription-form .input-box:active, .subscription-form .input-box:focus {
+  outline: none;
+  box-shadow: none;
+  border: none;
+}
+
+@media only screen and (max-width: 767px) {
+  .subscription-form .input-box {
+    width: 80%;
+    margin: 0 auto 24px;
+  }
+}
+
+@media only screen and (max-width: 479px) {
+  .subscription-form .input-box {
+    width: 85%;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .subscription-form .input-box {
+    width: 90%;
+  }
+}
+
+
+/* Contact Form */
+
+.contact-form .email-failed, .contact-form .email-success {
+  display: none;
+  margin: 16px 0;
+  color: #ff512f;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.contact-form .input-box, .contact-form .textarea-box {
+  padding: 16px 24px;
+  margin-bottom: 24px;
+  border: 1px solid #e0dfe6;
+  border-radius: 0;
+  font-size: 16px;
+  font-style: italic;
+  background: transparent;
+  -webkit-transition: all 0.1s ease-in-out;
+  -moz-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+}
+
+.contact-form .input-box:active, .contact-form .input-box:focus, .contact-form .textarea-box:active, .contact-form .textarea-box:focus {
+  outline: 0;
+  box-shadow: none;
+  border: 1px solid #20202f;
+}
+
+.contact-form .input-box {
+  height: 48px;
+}
+
+
+/* Contact Form End */
+
+
+/* Registration Modal */
+
+.register-modal .modal-dialog {
+  width: 480px;
+  margin: 0 auto;
+}
+
+@media only screen and (max-width: 479px) {
+  .register-modal .modal-dialog {
+    width: 80%;
+  }
+  .register-modal .modal-dialog .modal-body {
+    padding: 16px 8px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .register-modal .modal-dialog {
+    width: 90%;
+  }
+  .register-modal .modal-dialog .modal-body {
+    padding: 16px 4px;
+  }
+}
+
+.register-modal .modal-content {
+  border-radius: 0;
+  margin-top: 96px;
+}
+
+.register-modal .modal-header {
+  padding: 16px;
+  border: none;
+}
+
+.register-modal .modal-header .close {
+  color: #20202f;
+  opacity: 1;
+  font-size: 1.5rem;
+  -webkit-transition: all 0.1s ease-in-out;
+  -moz-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+}
+
+.register-modal .modal-header .close:hover {
+  color: #ff512f;
+}
+
+.register-modal .modal-header .modal-title {
+  margin-top: 16px;
+  margin-left: 24px;
+}
+
+.register-modal .modal-body {
+  padding: 24px 16px;
+}
+
+.register-modal .modal-body .content .modal-register {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.register-modal .modal-body .content .modal-register .register-failed, .register-modal .modal-body .content .modal-register .register-success {
+  margin-bottom: 8px;
+  color: #ff512f;
+  display: none;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.register-modal .modal-body .content .modal-register .combo-box, .register-modal .modal-body .content .modal-register .input-box {
+  height: 48px;
+  padding: 16px 24px;
+  margin-bottom: 24px;
+  border: 1px solid #e0dfe6;
+  border-radius: 0;
+  font-size: 16px;
+  font-style: italic;
+  background: transparent;
+  -webkit-transition: all 0.1s ease-in-out;
+  -moz-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+}
+
+.register-modal .modal-body .content .modal-register .combo-box:active, .register-modal .modal-body .content .modal-register .combo-box:focus, .register-modal .modal-body .content .modal-register .input-box:active, .register-modal .modal-body .content .modal-register .input-box:focus {
+  outline: 0;
+  box-shadow: none;
+  border: 1px solid #20202f;
+}
+
+.register-modal .modal-body .content .modal-register .combo-box {
+  padding: 8px 24px;
+}
+
+.register-modal .modal-body .content .modal-register label {
+  margin-bottom: 8px;
+  font-weight: 400;
+  color: #20202f;
+}
+
+.register-modal .modal-footer {
+  border: none;
+  text-align: center;
+}
+
+
+/* Registration Modal End */
+
+
+/*----------- Form Styles End -----------*/
+
+
+/*=============================================>>>>>
+= UI- Styles End =
+===============================================>>>>>*/
+
+
+/*=============================================>>>>>
+= Section - Styles =
+===============================================>>>>>*/
+
+
+/*----------  Navigation Style  ----------*/
+
+.sticky-navigation {
+  min-height: 48px;
+  background: #ffffff;
+  border: none;
+  padding: 0 !important;
+  margin-bottom: 0 !important;
+  -webkit-backface-visibility: hidden;
+  top: -100px;
+  -webkit-transition: all 0.7s ease-in-out;
+  -moz-transition: all 0.7s ease-in-out;
+  transition: all 0.7s ease-in-out;
+  -webkit-box-shadow: 0 0 16px 0 rgba(32, 32, 47, 0.16);
+  -moz-box-shadow: 0 0 16px 0 rgba(32, 32, 47, 0.16);
+  box-shadow: 0 0 16px 0 rgba(32, 32, 47, 0.16);
+}
+
+.sticky-navigation .navbar-brand {
+  height: 32px;
+  padding: 16px;
+  margin: auto;
+  -webkit-backface-visibility: hidden;
+}
+
+.sticky-navigation .eventster-nav .current a {
+  color: #ff512f;
+}
+
+.sticky-navigation .eventster-nav li a {
+  height: 48px;
+  color: #20202f;
+}
+
+.sticky-navigation .eventster-nav li a:active, .sticky-navigation .eventster-nav li a:focus, .sticky-navigation .eventster-nav li a:hover {
+  color: #ff512f;
+  background-color: transparent;
+}
+
+.navbar-header .navbar-toggle {
+  background: #ffffff;
+  color: #20202f;
+  border: none;
+}
+
+.navbar-header .navbar-toggle:focus, .navbar-header .navbar-toggle:hover, .navbar-header .navbar-toggle:active {
+  background: transparent;
+  color: #ff512f;
+}
+
+
+/*----------  Navigation Style End  ----------*/
+
+
+/*----------- Hero Banner Styles -----------*/
+
+.hero {
+  padding-top: 64px;
+  position: relative;
+  background-image: url("../img/header-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+}
+
+.hero .hero-content {
+  height: 100%;
+  padding-bottom: 160px;
+  position: relative;
+  z-index: 1;
+}
+
+.hero .logo {
+  margin-bottom: 80px;
+}
+
+.hero .date-venue {
+  display: inline-block;
+  padding: 8px 40px;
+  margin-bottom: 32px;
+  background-color: #ffffff;
+  color: #ff512f;
+}
+
+.hero .intro {
+  margin-bottom: 80px;
+}
+
+.hero .intro h1, .hero .intro p {
+  color: #ffffff;
+}
+
+.hero .intro h1 {
+  margin: 0 0 32px;
+}
+
+.hero .cta {
+  margin-bottom: 80px;
+}
+
+.hero .cta .hero-video-subscription {
+  margin-top: 48px;
+}
+
+.hero .countdown-card {
+  width: 480px;
+  position: absolute;
+  bottom: -48px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  padding: 48px;
+  background: #ffffff;
+}
+
+.hero .countdown-card .card-title {
+  margin-bottom: 48px;
+}
+
+.hero .countdown-card .card-title h6 {
+  color: #6b7684;
+}
+
+.hero .countdown-card .event-countdown {
+  list-style-type: none;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.hero .countdown-card .event-countdown :last-child {
+  margin-right: 0;
+}
+
+.hero .countdown-card .event-countdown li {
+  display: inline-block;
+  margin-right: 48px;
+}
+
+.hero .countdown-card .event-countdown li span {
+  margin-bottom: 16px;
+}
+
+@media only screen and (max-width: 479px) {
+  .hero .countdown-card .event-countdown li {
+    margin-right: 24px;
+  }
+  .hero .countdown-card .event-countdown li span {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .hero .countdown-card .event-countdown li {
+    margin-right: 16px;
+  }
+}
+
+@media only screen and (max-width: 479px) {
+  .hero .countdown-card {
+    width: 95%;
+    padding: 24px;
+  }
+  .hero .countdown-card .card-title {
+    margin-bottom: 24px;
+  }
+}
+
+@media only screen and (max-width: 479px) and (max-width: 320px) {
+  .hero .countdown-card {
+    padding: 24px 16px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .hero h1 {
+    font-size: 3rem;
+  }
+}
+
+
+/*----------- Hero Banner Styles End -----------*/
+
+
+/*----------- Speakers Section Styles -----------*/
+
+.speakers {
+  padding-top: 128px;
+}
+
+.speaker-card {
+  max-width: 263px;
+}
+
+.speaker-card .speaker-info {
+  padding: 24px 16px;
+}
+
+.speaker-card .speaker-info::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.speaker-card .speaker-info .speaker-social {
+  text-align: right;
+}
+
+.speaker-card .speaker-info .speaker-social :last-child {
+  margin-right: 0;
+}
+
+.speaker-card .speaker-info .speaker-social a {
+  color: #6b7684;
+  margin-right: 4px;
+  vertical-align: middle;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.speaker-card .speaker-info .speaker-social a:hover {
+  color: #ff512f;
+}
+
+.speaker-card .speaker-description {
+  text-align: left;
+  padding: 0 16px 24px;
+  font-style: italic;
+}
+
+@media only screen and (max-width: 991px) {
+  .speaker-card {
+    margin: 0 auto 48px;
+  }
+}
+
+
+/*----------- Speakers Section End -----------*/
+
+
+/*----------- Schedule Section Styles -----------*/
+
+.schedule-multiday .timelines {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.schedule-multiday .timelines li {
+  display: inline-block;
+  margin: 0 10px 32px;
+}
+
+
+/*=============================================>>>>>
+= Timeline Styles =
+===============================================>>>>>*/
+
+.timeline ul {
+  padding: 0;
+  margin: 0;
+}
+
+.timeline ul li {
+  list-style-type: none;
+  position: relative;
+  width: 2px;
+  margin: 0 auto;
+  padding-top: 50px;
+  background: #e0dfe6;
+}
+
+.timeline ul li::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  height: 24px;
+  width: 24px;
+  border-radius: 50%;
+  background: inherit;
+}
+
+.timeline ul li div {
+  position: relative;
+  bottom: 0;
+  width: 400px;
+  padding: 15px;
+  text-align: left;
+}
+
+.timeline ul li div::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.timeline ul li div::before {
+  content: '';
+  position: absolute;
+  bottom: 5px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+}
+
+.timeline ul li div img {
+  height: 80px;
+  width: 80px;
+  float: left;
+  border-radius: 50%;
+  margin-right: 16px;
+}
+
+.timeline ul li div .time {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #ff512f;
+}
+
+.timeline ul li:nth-child(odd) div {
+  left: 50px;
+}
+
+.timeline ul li:nth-child(odd) div::before {
+  left: -16px;
+  border-width: 8px 16px 8px 0;
+  border-color: transparent #ffffff transparent transparent;
+}
+
+.timeline ul li:nth-child(even) div {
+  left: -450px;
+}
+
+.timeline ul li:nth-child(even) div::before {
+  right: -15px;
+  border-width: 8px 0 8px 16px;
+  border-color: transparent transparent transparent #ffffff;
+}
+
+@media only screen and (max-width: 991px) {
+  .timeline ul li div {
+    width: 300px;
+  }
+  .timeline ul li:nth-child(even) div {
+    left: -350px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .timeline ul li {
+    margin-left: 40px;
+  }
+  .timeline ul li:after {
+    height: 24px;
+    width: 24px;
+  }
+  .timeline ul li div {
+    width: calc(100vw - 101px);
+  }
+  .timeline ul li:nth-child(odd) div {
+    left: 48px;
+  }
+  .timeline ul li:nth-child(even) div {
+    left: 48px;
+  }
+  .timeline ul li:nth-child(even) div::before {
+    left: -16px;
+    border-width: 8px 16px 8px 0;
+    border-color: transparent #ffffff transparent transparent;
+  }
+}
+
+@media only screen and (max-width: 479px) {
+  .timeline ul li div {
+    width: calc(100vw - 120px);
+  }
+}
+
+
+/*----------- Venue Styles -----------*/
+
+.venue {
+  background-image: url("../img/venue-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+}
+
+.venue .venue-card {
+  margin: 0 auto;
+  padding: 64px 0;
+}
+
+.venue .venue-card .section-heading {
+  margin-bottom: 48px;
+}
+
+.venue .venue-card .venue-address {
+  margin-bottom: 48px;
+}
+
+@media only screen and (max-width: 767px) {
+  .venue .venue-card {
+    width: 75%;
+  }
+}
+
+@media only screen and (max-width: 479px) {
+  .venue .venue-card {
+    width: 85%;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .venue .venue-card {
+    width: 90%;
+  }
+}
+
+
+/*----------- Venue Styles End -----------*/
+
+
+/*----------- Recommended Hotel Styles -----------*/
+
+.hotels .hotel-card {
+  margin-bottom: 32px;
+}
+
+.hotels .hotel-card .hotel-description {
+  padding: 32px 32px 32px 24px;
+  margin-left: 50%;
+  background: #ffffff;
+}
+
+.hotels .hotel-card .hotel-description::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.hotels .hotel-card .hotel-description .name-and-reservation {
+  float: left;
+  text-align: left;
+}
+
+.hotels .hotel-card .hotel-description .name-and-reservation h5 {
+  margin-bottom: 16px;
+}
+
+.hotels .hotel-card .hotel-description .name-and-reservation a {
+  color: #ff512f;
+}
+
+.hotels .hotel-card .hotel-description .price-and-rating {
+  float: right;
+  text-align: right;
+}
+
+.hotels .hotel-card .hotel-description .price-and-rating h5 {
+  margin-bottom: 16px;
+}
+
+.hotels .hotel-card .hotel-description .price-and-rating .currency {
+  font-size: 1rem;
+}
+
+.hotels .hotel-card .hotel-description .price-and-rating .lnr {
+  color: #ff512f;
+}
+
+@media only screen and (max-width: 767px) {
+  .hotels .hotel-card .hotel-description {
+    margin-left: 0;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .hotels .hotel-card {
+    width: 90%;
+    margin: 0 auto 32px;
+  }
+}
+
+@media only screen and (max-width: 479px) {
+  .hotels .hotel-card h5 {
+    font-size: 1rem;
+  }
+}
+
+.hotels .hotel-card-1 {
+  background-image: url("../img/hotel-placeholder.jpg");
+}
+
+@media (min-resolution: 1.5dppx), (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
+  .hotels .hotel-card-1 {
+    background-image: url("../img/hotel-placeholder@2x.jpg");
+  }
+}
+
+.hotels .hotel-card-2 {
+  background-image: url("../img/hotel-placeholder.jpg");
+}
+
+@media (min-resolution: 1.5dppx), (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
+  .hotels .hotel-card-2 {
+    background-image: url("../img/hotel-placeholder@2x.jpg");
+  }
+}
+
+.hotels .hotel-card-3 {
+  background-image: url("../img/hotel-placeholder.jpg");
+}
+
+@media (min-resolution: 1.5dppx), (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
+  .hotels .hotel-card-3 {
+    background-image: url("../img/hotel-placeholder@2x.jpg");
+  }
+}
+
+.hotels .hotel-card-4 {
+  background-image: url("../img/hotel-placeholder.jpg");
+  margin-bottom: 0;
+}
+
+@media (min-resolution: 1.5dppx), (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
+  .hotels .hotel-card-4 {
+    background-image: url("../img/hotel-placeholder@2x.jpg");
+  }
+}
+
+
+/*----------- Recommended Hotel Styles  End -----------*/
+
+
+/*----------- Testimonials Styles -----------*/
+
+.testimonials .testimonial-carousel :last-child {
+  margin-right: 0;
+}
+
+.testimonials .testimonial-carousel .testimonial-card {
+  padding: 32px;
+  margin: 0 12px 24px;
+}
+
+.testimonials .testimonial-carousel .testimonial-card .testimonial-img {
+  margin-bottom: 16px;
+}
+
+.testimonials .testimonial-carousel .testimonial-card .testimonial-img img {
+  border-radius: 50%;
+  height: 64px;
+  width: 64px;
+}
+
+.testimonials .testimonial-carousel .testimonial-card .testimonial-name {
+  margin-bottom: 32px;
+}
+
+.testimonials .testimonial-carousel .testimonial-card .testimonial-comment {
+  font-style: italic;
+}
+
+
+/* Owl Carousel Custom Styles */
+
+.grabbing {
+  cursor: url("../img/grabbing.png") 8 8, move;
+}
+
+.owl-theme .owl-controls .owl-page span {
+  height: 16px;
+  width: 16px;
+  background: #e0dfe6;
+}
+
+.owl-theme .owl-controls .owl-page.active span, .owl-theme .owl-controls.clickable .owl-page:hover span {
+  background: #6b7684;
+}
+
+.owl-item.loading {
+  min-height: 150px;
+  background: url("../img/AjaxLoader.gif") no-repeat center center;
+}
+
+
+/*----------- Testimonials Styles End -----------*/
+
+
+/*----------- Sponsors Styles -----------*/
+
+.sponsors .first-row {
+  border-bottom: 1px solid #e0dfe6;
+}
+
+.sponsors .second-row {
+  margin-bottom: 64px;
+}
+
+.sponsors .first-column, .sponsors .second-column {
+  border-right: 1px solid #e0dfe6;
+}
+
+.sponsors .sponsor-img {
+  padding: 80px 0;
+}
+
+@media only screen and (max-width: 991px) {
+  .sponsors .sponsor-img {
+    padding: 48px 0;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .sponsors .first-row, .sponsors .first-column, .sponsors .second-column {
+    border: none;
+  }
+}
+
+
+/*----------- Sponsors Styles End -----------*/
+
+
+/*----------- Faq Section Styles -----------*/
+
+.faq-accordian :last-child {
+  margin-bottom: 0;
+}
+
+@media only screen and (max-width: 767px) {
+  .faq-accordian {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+
+.panel {
+  border-radius: 0;
+  box-shadow: 0 0 8px 0 rgba(32, 32, 47, 0.16);
+  margin: 0 0 16px;
+}
+
+.panel a.panel-heading {
+  display: block;
+  position: relative;
+  padding: 16px 24px;
+  text-align: left;
+}
+
+.panel a.panel-heading:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  height: 8px;
+  width: 8px;
+  border-left: 1px solid #ff512f;
+  border-top: 1px solid #ff512f;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.panel a.panel-heading.collapsed:after {
+  top: 20px;
+  border: none;
+  border-right: 1px solid #ff512f;
+  border-bottom: 1px solid #ff512f;
+}
+
+@media only screen and (max-width: 767px) {
+  .panel a.panel-heading {
+    padding: 16px;
+  }
+  .panel a.panel-heading:after, .panel a.panel-heading.collapsed:after {
+    display: none;
+  }
+  .panel a.panel-heading h6 {
+    line-height: 1.5;
+  }
+}
+
+.panel .panel-body {
+  border-top: 1px solid #e0dfe6;
+  padding: 24px;
+  text-align: left;
+}
+
+
+/*----------- Faq Section Styles End -------*/
+
+
+/*----------- Pricing Styles -----------*/
+
+.pricing .price-table {
+  padding-bottom: 32px;
+}
+
+@media only screen and (max-width: 991px) {
+  .pricing .price-table {
+    max-width: 350px;
+    margin: 0 auto 48px;
+  }
+}
+
+.pricing .table-header {
+  background: #20202f;
+  padding: 32px 0 48px;
+}
+
+.pricing .table-header .plan-name {
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  margin-bottom: 24px;
+  color: #f6f6f8;
+}
+
+.pricing .table-header .currency, .pricing .table-header .price {
+  font-family: "Roboto Slab", serif;
+  color: #ffffff;
+}
+
+.pricing .table-header .currency {
+  font-size: 1.5rem;
+}
+
+.pricing .table-header .price {
+  font-size: 3rem;
+}
+
+.pricing .table-body {
+  padding: 0 8px;
+}
+
+.pricing .table-body .features {
+  list-style-type: none;
+  margin: 48px 0;
+  padding: 0;
+}
+
+.pricing .table-body .features :last-child {
+  margin-bottom: 0;
+}
+
+.pricing .table-body .features li {
+  margin-bottom: 24px;
+}
+
+
+/*----------- Pricing Styles End -----------*/
+
+
+/*----------- Final CTA Styles -----------*/
+
+.final-cta {
+  padding: 48px 0;
+  background-color: #20202f;
+}
+
+.final-cta .cta-sentence {
+  color: #ffffff;
+  margin-bottom: 64px;
+}
+
+
+/*----------- Final CTA Styles -----------*/
+
+
+/*----------- Conact and Map Styles -----------*/
+
+
+/* Contact and Map */
+
+.contact {
+  padding: 64px 0;
+  position: relative;
+  /* map */
+}
+
+.contact #map {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+}
+
+@media only screen and (max-width: 991px) {
+  .contact #map {
+    top: 0;
+    left: 0;
+    position: relative;
+    width: 100%;
+    height: 240px;
+  }
+}
+
+.contact .contact-card {
+  padding: 48px 24px;
+}
+
+.contact .contact-card .section-heading {
+  margin-bottom: 48px;
+}
+
+@media only screen and (max-width: 991px) {
+  .contact .contact-card {
+    margin: 48px auto 0;
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 479px) {
+  .contact .contact-card {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .contact {
+    padding-top: 0;
+  }
+}
+
+
+/*----------- Conact and Map Styles End -----------*/
+
+
+/*----------- Footer Styles -----------*/
+
+.eventster-footer {
+  padding: 48px 0;
+  background-color: #20202f;
+  /* Copyright and back to top button */
+}
+
+.eventster-footer .logo {
+  margin-bottom: 24px;
+}
+
+.eventster-footer .social-icons {
+  margin-bottom: 32px;
+}
+
+.eventster-footer .social-icons .eventster-social {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.eventster-footer .social-icons .eventster-social li {
+  display: inline-block;
+  margin: 0 8px 0 0;
+}
+
+.eventster-footer .social-icons .eventster-social li a {
+  color: #f6f6f8;
+  -webkit-transition: all 0.1s ease-in-out;
+  -moz-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+}
+
+.eventster-footer .social-icons .eventster-social li a:active, .eventster-footer .social-icons .eventster-social li a:focus, .eventster-footer .social-icons .eventster-social li a:hover {
+  color: #ff512f;
+}
+
+.eventster-footer .copyright {
+  color: #f6f6f8;
+  margin-bottom: 48px;
+}
+
+.eventster-footer .back-to-top a {
+  color: #ffffff;
+  font-size: 2rem;
+}
+
+
+/*----------- Footer Styles End -----------*/
+
+
+/*=============================================>>>>>
+= Section - Styles End =
+===============================================>>>>>*/

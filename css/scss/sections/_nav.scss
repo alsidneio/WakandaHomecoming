@@ -1,0 +1,47 @@
+/*----------  Navigation Style  ----------*/
+.sticky-navigation {
+  min-height: $medium;
+  background: $light-1;
+  border: none;
+  padding: 0 !important;
+  margin-bottom: 0 !important;
+  -webkit-backface-visibility: hidden;
+  top: -100px;
+  @include transition(all 0.7s ease-in-out);
+  @include prefixer(box-shadow, 0 0 16px 0 rgba(32, 32, 47, 0.16), webkit moz spec);
+  .navbar-brand {
+    height: $small;
+    padding: $micro;
+    margin: auto;
+    -webkit-backface-visibility: hidden;
+  }
+  .eventster-nav {
+    .current a {
+      color: $accent;
+    }
+    li a {
+      height: $medium;
+      color: $dark-1;
+      &:active,
+      &:focus,
+      &:hover {
+        color: $accent;
+        background-color: transparent;
+      }
+    }
+  }
+}
+.navbar-header {
+  .navbar-toggle {
+    background: $light-1;
+    color: $dark-1;
+    border: none;
+    &:focus,
+    &:hover,
+    &:active {
+      background: transparent;
+      color: $accent;
+    }
+  }
+}
+/*----------  Navigation Style End  ----------*/

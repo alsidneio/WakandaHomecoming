@@ -1,0 +1,130 @@
+/*----------- Schedule Section Styles -----------*/
+.schedule,
+.schedule-multiday {
+  @extend %section-no-border;
+}
+.schedule-multiday {
+  .timelines {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    li {
+      display: inline-block;
+      margin: 0 10px $small;
+    }
+  }
+}
+/*=============================================>>>>>
+= Timeline Styles =
+===============================================>>>>>*/
+.timeline {
+  ul {
+    padding: 0;
+    margin: 0;
+    li {
+      list-style-type: none;
+      position: relative;
+      width: 2px;
+      margin: 0 auto;
+      padding-top: 50px;
+      background: $stroke;
+      &::after {
+        content: '';
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        transform: translateX(-50%);
+        @include size($mini);
+        border-radius: 50%;
+        background: inherit;
+      }
+      div {
+        @extend %card;
+        @include clearfix();
+        position: relative;
+        bottom: 0;
+        width: 400px;
+        padding: 15px;
+        text-align: left;
+        &::before {
+          content: '';
+          position: absolute;
+          bottom: 5px;
+          width: 0;
+          height: 0;
+          border-style: solid;
+        }
+        img {
+          @include size($x-large);
+          float: left;
+          border-radius: 50%;
+          margin-right: $micro;
+        }
+        .time {
+          font-size: rem($micro);
+          font-weight: 400;
+          color: $accent;
+        }
+      }
+      &:nth-child(odd) {
+        div {
+          left: $medium + 2;
+          &::before {
+            left: -$micro;
+            border-width: 8px 16px 8px 0;
+            border-color: transparent $light-1 transparent transparent;
+          }
+        }
+      }
+      &:nth-child(even) {
+        div {
+          left: -450px; //400 + $medium + 2
+          &::before {
+            right: -15px;
+            border-width: 8px 0 8px 16px;
+            border-color: transparent transparent transparent $light-1;
+          }
+        }
+      }
+    }
+  }
+  @include respond-to(laptop) {
+
+    ul li {
+      div{
+        width: 300px;
+      }
+      &:nth-child(even) div {
+        left: -350px;
+      }
+    }
+
+    }
+  @include respond-to(tablet) {
+    ul li {
+      margin-left: $mini + ($small/2);
+      &:after {
+        @include size($mini);
+      }
+      div {
+        width: calc(100vw - 101px);
+      }
+      &:nth-child(odd) div {
+        left: $medium;
+      }
+      &:nth-child(even) div {
+        left: $medium;
+        }
+      &:nth-child(even) div::before {
+        left: - $micro;
+        border-width: $micro/2 $micro $micro/2 0;
+        border-color: transparent $light-1 transparent transparent;
+      }
+    }
+  }
+  @include respond-to(phone) {
+    ul li div {
+      width: calc(100vw - 120px);
+    }
+  }
+}

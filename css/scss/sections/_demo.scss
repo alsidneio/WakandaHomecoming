@@ -1,0 +1,50 @@
+.demo-header {
+  padding: $x-large*2 0;
+  background: url("../img/demo-header-bg.jpg");
+  background-position: top center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  img {
+    margin-bottom: $medium;
+  }
+  h4 {
+    margin-bottom: $small;
+    color: $light-1;
+  }
+  h6 {
+    color: $light-1;
+    font-family: $font-body;
+    span {
+      color: $accent;
+    }
+  }
+  @include respond-to(tablet) {
+    h4 {
+      font-size: rem($mini);
+    }
+  }
+}
+.categories {
+  a {
+    img {
+      margin-bottom: $small;
+      @include transition(all .2s ease-in-out);
+    }
+    &:hover {
+      img {
+        @include transform(translateY(-10px));
+      }
+    }
+  }
+  .demo-link {
+    @include respond-to(laptop) {
+      width: 90%;
+      margin: 0 auto $medium;
+    }
+  }
+  @include respond-to(tablet) {
+    .section-heading h4 {
+      font-size: rem($mini);
+    }
+  }
+}

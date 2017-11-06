@@ -1,0 +1,59 @@
+/*----------- Pricing Styles -----------*/
+.pricing {
+  @extend %section-no-border;
+  .price-table {
+    padding-bottom: $small;
+    @extend %card;
+    @include respond-to(laptop) {
+      max-width: 350px;
+      margin: 0 auto $medium;
+    }
+  }
+  .table-header {
+    background: $dark-1;
+    padding: $small 0 $medium;
+    .plan-name {
+      text-transform: uppercase;
+      letter-spacing: 0.2em;
+      margin-bottom: $mini;
+      color: $light-2;
+    }
+    .currency,
+    .price {
+      font-family: $font-heading;
+      color: $light-1;
+    }
+    .currency {
+      font-size: rem(24);
+    }
+    .price {
+      font-size: rem(48);
+    }
+  }
+  .table-body {
+    padding: 0 $micro/2;
+    .features {
+      list-style-type: none;
+      margin: $medium 0;
+      padding: 0;
+      :last-child {
+        margin-bottom: 0;
+      }
+      li {
+        margin-bottom: $mini;
+      }
+    }
+  }
+}
+/*----------- Pricing Styles End -----------*/
+/*----------- Final CTA Styles -----------*/
+.final-cta {
+  @extend %section-no-border;
+  padding: $medium 0;
+  background-color: $dark-1;
+  .cta-sentence {
+    color: $light-1;
+    margin-bottom: $large;
+  }
+}
+/*----------- Final CTA Styles -----------*/

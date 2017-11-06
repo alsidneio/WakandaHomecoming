@@ -1,0 +1,54 @@
+/*----------- Faq Section Styles -----------*/
+.faq-accordian {
+  :last-child {
+    margin-bottom: 0;
+  }
+  @include respond-to(tablet) {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+.panel {
+  border-radius: 0;
+  box-shadow: 0 0 8px 0 rgba(32, 32, 47, 0.16);
+  margin: 0 0 $micro;
+  a.panel-heading {
+    display: block;
+    position: relative;
+    padding: $micro $mini;
+    text-align: left;
+    &:after {
+      content: "";
+      display: block;
+      position: absolute;
+      top: $mini;
+      right: $mini;
+      height: $micro/2;
+      width: $micro/2;
+      border-left: 1px solid $accent;
+      border-top: 1px solid $accent;
+      @include transform(rotate(45deg));
+    }
+    &.collapsed:after {
+      top: $mini - 4;
+      border: none;
+      border-right: 1px solid $accent;
+      border-bottom: 1px solid $accent;
+    }
+    @include respond-to(tablet) {
+      padding: $micro;
+      &:after, &.collapsed:after{
+        display: none;
+      }
+      h6{
+        line-height: 1.5;
+      }
+    }
+  }
+  .panel-body {
+    border-top: 1px solid $stroke;
+    padding: $mini;
+    text-align: left;
+  }
+}
+/*----------- Faq Section Styles End -------*/

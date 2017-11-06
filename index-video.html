@@ -1,0 +1,797 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<!--=============================================>>>>>
+= Head =
+===============================================>>>>-->
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Eventster | Elegent and Responsive event landing page</title>
+  <meta name="description" content="Elegent and fully Responsive event landing page">
+  <meta name="author" content="Pankaj Chakraborty <authors@paperboatdesigns.co>">
+  <meta name="keywords" content="Event, Startup Event, Bootstrap, Landing Page, Template, Sass, Responsive, Tech conference">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Touch and Favicon icons (High Resoulution) -->
+  <link rel="apple-touch-icon" sizes="57x57" href="img/favicons/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="img/favicons/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="img/favicons/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="img/favicons/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="img/favicons/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="img/favicons/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="img/favicons/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="img/favicons/apple-touch-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon-180x180.png">
+  <link rel="icon" type="image/png" href="img/favicons/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="img/favicons/favicon-194x194.png" sizes="194x194">
+  <link rel="icon" type="image/png" href="img/favicons/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/png" href="img/favicons/android-chrome-192x192.png" sizes="192x192">
+  <link rel="icon" type="image/png" href="img/favicons/favicon-16x16.png" sizes="16x16">
+  <link rel="manifest" href="img/favicons/manifest.json">
+  <link rel="mask-icon" href="img/favicons/safari-pinned-tab.svg">
+  <link rel="shortcut icon" href="img/favicons/favicon.ico">
+  <meta name="msapplication-TileColor" content="#20202f">
+  <meta name="msapplication-TileImage" content="img/favicons/mstile-144x144.png">
+  <meta name="msapplication-config" content="img/favicons/browserconfig.xml">
+  <meta name="theme-color" content="#20202f">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Slab%7CRoboto:400,400i" rel="stylesheet">
+  <!-- Icon Fonts -->
+  <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+  <!-- Vendor Stylesheets -->
+  <link rel="stylesheet" href="css/plugins/plugins.min.css">
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="css/main.css">
+  <!-- Modernizr -->
+  <script src="js/modernizr.min.js"></script>
+</head>
+<!--= End of Head =*/-->
+<!--=============================================<<<<<-->
+<!--=============================================>>>>>
+= Body =
+===============================================>>>>-->
+
+<body>
+  <!--[if lt IE 8]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+  <![endif]-->
+  <!-- Preloader -->
+  <div class="preloader">
+    <div class="pulse"></div>
+  </div>
+  <!-- Preloader End -->
+  <!-- Registration Modal -->
+  <div class="modal fade register-modal" id="registerModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+            <span class="lnr lnr-cross"></span>
+          </button>
+          <h5 class="modal-title">Register for Conference 2016</h5>
+        </div>
+        <div class="modal-body">
+          <div class="content">
+            <form class="modal-register" id="registration">
+              <p class="register-success">Thank you for your registration.</p>
+              <p class="register-failed">Your Registration was not submitted succesfully.</p>
+              <input class="form-control input-box" id="register-name" type="text" name="name" placeholder="Your Name" required>
+              <input class="form-control input-box" id="register-email" type="email" name="email" placeholder="Your Email" required>
+              <input class="form-control input-box" id="register-password" type="password" name="password" placeholder="Your Password" required>
+              <label for="register-plan">Choose your plan</label>
+              <select class="form-control combo-box" id="register-plan">
+                <option value="basic">Basic</option>
+                <option value="premium">Premium</option>
+                <option value="gold">Gold</option>
+                <option value="platinum">Platinum</option>
+              </select>
+              <button class="button-primary button-form">Register Now</button>
+            </form>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <p>Hurry!! Only limited seating available</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Registration Modal End -->
+  <!-- Hero Unit -->
+  <header id="hero" class="hero">
+    <div class="container">
+      <!-- Navigation Start -->
+      <div class="navbar navbar-fixed-top sticky-navigation">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav">
+              <span class="sr-only">Toggle navigation</span>
+              <i class="fa fa-bars"></i>
+            </button>
+            <a class="navbar-brand" href="#"><img src="img/logo-dark.png" alt="Eventster"></a>
+          </div>
+          <div class="navbar-collapse collapse" id="main-nav">
+            <ul class="nav navbar-nav navbar-right eventster-nav">
+              <li><a href="#hero">Home</a></li>
+              <li><a href="#speakers">Speakers</a></li>
+              <li><a href="#schedule">Schedule</a></li>
+              <li><a href="#venue">Venue</a></li>
+              <li><a href="#pricing">Pricing</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- Navigation End -->
+      <div class="hero-content">
+        <div class="logo">
+          <img src="img/logo.png" alt="Eventster">
+        </div>
+        <div class="date-venue">
+          <p>09 July 2016 - 12 July 2016 | Bengaluru, India</p>
+        </div>
+        <div class="row">
+          <div class="intro">
+            <h1>Startup Conference 2016</h1>
+            <p>Kale chips flexitarian VHS, yuccie asymmetrical truffaut mlkshk. Four loko franzen waistcoat hella pop-up.</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="cta">
+            <a class="button-video" href="wakanda.mp4"><img src="img/play-icon.svg" alt="Play Video"></a>
+            <div class="hero-video-subscription">
+              <form id="subscribe-header" class="subscription-form form-inline">
+                <h6 class="subscription-success"></h6>
+                <h6 class="subscription-failure"></h6>
+                <input type="email" name="email" placeholder="Keep me posted" class="form-control input-box" required>
+                <button type="submit" class="button-primary button-sub">Subscribe</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="countdown-card">
+          <div class="card-title">
+            <h6>Event Starts in</h6>
+          </div>
+          <ul class="event-countdown">
+            <li>
+              <h5><span class="days">00</span></h5>
+              <p class="textDays">days</p>
+            </li>
+            <li>
+              <h5><span class="hours">00</span></h5>
+              <p class="textHours">hours</p>
+            </li>
+            <li>
+              <h5><span class="minutes">00</span></h5>
+              <p class="textMinutes">minutes</p>
+            </li>
+            <li>
+              <h5><span class="seconds">00</span></h5>
+              <p class="textSeconds">seconds</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- Hero Unit End -->
+  <!-- Speakers Section -->
+  <section id="speakers" class="speakers">
+    <div class="container">
+      <div class="row">
+        <div class="section-heading">
+          <span class="lnr lnr-mic"></span>
+          <h4>Speakers</h4>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-3">
+          <div class="speaker-card">
+            <div class="speaker-image">
+              <img src="img/speaker-placeholder.jpg" class="img-responsive" alt="Speaker Image">
+            </div>
+            <div class="speaker-info">
+              <div class="speaker-title pull-left ">
+                <h5>Jane Banks</h5>
+              </div>
+              <div class="speaker-social pull-right">
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+              </div>
+            </div>
+            <div class="speaker-description">
+              <p>Viral heirloom helvetica, flannel yuccie leggings pinterest. Beard next level narwhal.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="speaker-card">
+            <div class="speaker-image">
+              <img src="img/speaker-placeholder.jpg" class="img-responsive" alt="Speaker Image">
+            </div>
+            <div class="speaker-info">
+              <div class="speaker-title pull-left">
+                <h5>Frank Diaz</h5>
+              </div>
+              <div class="speaker-social pull-right">
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+              </div>
+            </div>
+            <div class="speaker-description">
+              <p>Viral heirloom helvetica, flannel yuccie leggings pinterest. Beard next level narwhal.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="speaker-card">
+            <div class="speaker-image">
+              <img src="img/speaker-placeholder.jpg" alt="Speaker Image" class="img-responsive">
+            </div>
+            <div class="speaker-info">
+              <div class="speaker-title pull-left">
+                <h5>Mark Hunt</h5>
+              </div>
+              <div class="speaker-social pull-right">
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+              </div>
+            </div>
+            <div class="speaker-description">
+              <p>Viral heirloom helvetica, flannel yuccie leggings pinterest. Beard next level narwhal.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="speaker-card">
+            <div class="speaker-image">
+              <img src="img/speaker-placeholder.jpg" class="img-responsive" alt="Speaker Image">
+            </div>
+            <div class="speaker-info">
+              <div class="speaker-title pull-left">
+                <h5>Jane Ramos</h5>
+              </div>
+              <div class="speaker-social pull-right">
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+              </div>
+            </div>
+            <div class="speaker-description">
+              <p>Viral heirloom helvetica, flannel yuccie leggings pinterest. Beard next level narwhal.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Speaker Section End -->
+  <!-- Schedule Section -->
+  <section id="schedule" class="schedule">
+    <div class="container">
+      <div class="row">
+        <div class="section-heading">
+          <span class="lnr lnr-clock"></span>
+          <h4>Schedule</h4>
+        </div>
+        <div class="timeline">
+          <ul>
+            <li>
+              <div>
+                <img src="img/speaker-placeholder.jpg" class="img-responsive" alt="speaker">
+                <p class="time"><time>09:00</time> am</p>
+                <p>Crucifix tousled butcher pour-over. Single-origin coffee.</p>
+              </div>
+            </li>
+            <li>
+              <div>
+                <img src="img/speaker-placeholder.jpg" class="img-responsive" alt="speaker">
+                <p class="time"><time>11:00</time> am</p>
+                <p>Crucifix tousled butcher pour-over. Single-origin coffee.</p>
+              </div>
+            </li>
+            <li>
+              <div>
+                <img src="img/speaker-placeholder.jpg" class="img-responsive" alt="speaker">
+                <p class="time"><time>01:00</time> pm</p>
+                <p>Crucifix tousled butcher pour-over. Single-origin coffee.</p>
+              </div>
+            </li>
+            <li>
+              <div>
+                <img src="img/speaker-placeholder.jpg" class="img-responsive" alt="speaker">
+                <p class="time"><time>02:00</time> pm</p>
+                <p>Crucifix tousled butcher pour-over. Single-origin coffee.</p>
+              </div>
+            </li>
+            <li>
+              <div>
+                <img src="img/speaker-placeholder.jpg" class="img-responsive" alt="speaker">
+                <p class="time"><time>03:00</time> pm</p>
+                <p>Crucifix tousled butcher pour-over. Single-origin coffee.</p>
+              </div>
+            </li>
+            <li>
+              <div>
+                <img src="img/speaker-placeholder.jpg" class="img-responsive" alt="speaker">
+                <p class="time"><time>05:00</time> pm</p>
+                <p>Crucifix tousled butcher pour-over. Single-origin coffee.</p>
+              </div>
+            </li>
+            <li>
+              <div>
+                <img src="img/speaker-placeholder.jpg" class="img-responsive" alt="speaker">
+                <p class="time"><time>06:00</time> pm</p>
+                <p>Crucifix tousled butcher pour-over. Single-origin coffee.</p>
+              </div>
+            </li>
+            <li>
+              <div>
+                <img src="img/speaker-placeholder.jpg" class="img-responsive" alt="speaker">
+                <p class="time"><time>07:00</time> pm</p>
+                <p>Crucifix tousled butcher pour-over. Single-origin coffee.</p>
+              </div>
+            </li>
+            <li>
+              <div>
+                <img src="img/speaker-placeholder.jpg" class="img-responsive" alt="speaker">
+                <p class="time"><time>09:30</time> pm</p>
+                <p>Crucifix tousled butcher pour-over. Single-origin coffee.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Schedule Section End -->
+  <!-- Venue Section -->
+  <section id="venue" class="venue">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+          <div class="row">
+            <div class="venue-card">
+              <div class="section-heading">
+                <span class="lnr lnr-map-marker"></span>
+                <h4>Venue</h4>
+              </div>
+              <div class="venue-address">
+                <p>1st A Main Road, Kormangla
+                  <br> Bengaluru Karnataka
+                  <br> 560034 </p>
+              </div>
+              <div class="contatce-info">
+                <p>Tel. 1234567890</p>
+                <p>Email us at. info@paperboatdesigns.co</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Venue Section End -->
+  <!-- Recommended Hotels Section -->
+  <section class="hotels" id="hotels">
+    <div class="container">
+      <div class="row">
+        <div class="section-heading">
+          <span class="lnr lnr-apartment"></span>
+          <h4>Recommended Hotels</h4>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-10 col-md-offset-1">
+          <div class="row">
+            <div class="hotel-card hotel-card-1">
+              <div class="hotel-description">
+                <div class="name-and-reservation">
+                  <h5>Hotel Silver Oak</h5>
+                  <a href="#">Reservation</a>
+                </div>
+                <div class="price-and-rating">
+                  <h5>80<span class="currency">$</span></h5>
+                  <span class="lnr lnr-star"></span>
+                  <span class="lnr lnr-star"></span>
+                  <span class="lnr lnr-star"></span>
+                  <span class="lnr lnr-star"></span>
+                </div>
+              </div>
+            </div>
+            <div class="hotel-card hotel-card-2">
+              <div class="hotel-description">
+                <div class="name-and-reservation">
+                  <h5>Hotel Downtown</h5>
+                  <a href="#">Reservation</a>
+                </div>
+                <div class="price-and-rating">
+                  <h5>90<span class="currency">$</span></h5>
+                  <span class="lnr lnr-star"></span>
+                  <span class="lnr lnr-star"></span>
+                  <span class="lnr lnr-star"></span>
+                  <span class="lnr lnr-star"></span>
+                  <span class="lnr lnr-star"></span>
+                </div>
+              </div>
+            </div>
+            <div class="hotel-card hotel-card-3">
+              <div class="hotel-description">
+                <div class="name-and-reservation">
+                  <h5>Hotel Emareld</h5>
+                  <a href="#">Reservation</a>
+                </div>
+                <div class="price-and-rating">
+                  <h5>75<span class="currency">$</span></h5>
+                  <span class="lnr lnr-star"></span>
+                  <span class="lnr lnr-star"></span>
+                  <span class="lnr lnr-star"></span>
+                  <span class="lnr lnr-star"></span>
+                </div>
+              </div>
+            </div>
+            <div class="hotel-card hotel-card-4">
+              <div class="hotel-description">
+                <div class="name-and-reservation">
+                  <h5>Hotel East Park</h5>
+                  <a href="#">Reservation</a>
+                </div>
+                <div class="price-and-rating">
+                  <h5>95<span class="currency">$</span></h5>
+                  <span class="lnr lnr-star"></span>
+                  <span class="lnr lnr-star"></span>
+                  <span class="lnr lnr-star"></span>
+                  <span class="lnr lnr-star"></span>
+                  <span class="lnr lnr-star"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Recommended Hotels Section End -->
+  <!-- Testimonials Section -->
+  <section class="testimonials" id="testimonials">
+    <div class="container">
+      <div class="row">
+        <div class="section-heading">
+          <span class="lnr lnr-heart"></span>
+          <h4>Testimonials</h4>
+        </div>
+      </div>
+      <div class="testimonial-carousel">
+        <div class="testimonial-card">
+          <div class="testimonial-img">
+            <img src="img/testimonial-placeholder.jpg" alt="Testimonial Image">
+          </div>
+          <div class="testimonial-name">
+            <h6>Aaron Clark</h6>
+          </div>
+          <div class="testimonial-comment">
+            <p>“Letterpress single-origin coffee forage, swag pabst ethical farm-to-table craft beer irony cray retro hoodie neutra asymmetrical.”</p>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-img">
+            <img src="img/testimonial-placeholder.jpg" alt="Testimonial Image">
+          </div>
+          <div class="testimonial-name">
+            <h6>Brandon Duncan</h6>
+          </div>
+          <div class="testimonial-comment">
+            <p>“Letterpress single-origin coffee forage, swag pabst ethical farm-to-table craft beer irony cray retro hoodie neutra asymmetrical.”</p>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-img">
+            <img src="img/testimonial-placeholder.jpg" alt="Testimonial Image">
+          </div>
+          <div class="testimonial-name">
+            <h6>Betty Hicks</h6>
+          </div>
+          <div class="testimonial-comment">
+            <p>“Letterpress single-origin coffee forage, swag pabst ethical farm-to-table craft beer irony cray retro hoodie neutra asymmetrical.”</p>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-img">
+            <img src="img/testimonial-placeholder.jpg" alt="Testimonial Image">
+          </div>
+          <div class="testimonial-name">
+            <h6>Julia Spencer</h6>
+          </div>
+          <div class="testimonial-comment">
+            <p>“Letterpress single-origin coffee forage, swag pabst ethical farm-to-table craft beer irony cray retro hoodie neutra asymmetrical.”</p>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-img">
+            <img src="img/testimonial-placeholder.jpg" alt="Testimonial Image">
+          </div>
+          <div class="testimonial-name">
+            <h6>Kevin Arnold</h6>
+          </div>
+          <div class="testimonial-comment">
+            <p>“Letterpress single-origin coffee forage, swag pabst ethical farm-to-table craft beer irony cray retro hoodie neutra asymmetrical.”</p>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-img">
+            <img src="img/testimonial-placeholder.jpg" alt="Testimonial Image">
+          </div>
+          <div class="testimonial-name">
+            <h6>Matthew Brown</h6>
+          </div>
+          <div class="testimonial-comment">
+            <p>“Letterpress single-origin coffee forage, swag pabst ethical farm-to-table craft beer irony cray retro hoodie neutra asymmetrical.”</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Testimonials Section End -->
+  <!-- Sposnors Section -->
+  <section class="sponsors" id="sponsors">
+    <div class="container">
+      <div class="row">
+        <div class="section-heading">
+          <span class="lnr lnr-star"></span>
+          <h4>Our Sponsors</h4>
+        </div>
+      </div>
+      <div class="row first-row">
+        <div class="col-md-4 first-column">
+          <div class="sponsor-img">
+            <img src="img/sponsor-placeholder.png" alt="Sponsor logo">
+          </div>
+        </div>
+        <div class="col-md-4 second-column">
+          <div class="sponsor-img">
+            <img src="img/sponsor-placeholder.png" alt="Sponsor logo">
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="sponsor-img">
+            <img src="img/sponsor-placeholder.png" alt="Sponsor logo">
+          </div>
+        </div>
+      </div>
+      <div class="row second-row">
+        <div class="col-md-4 first-column">
+          <div class="sponsor-img">
+            <img src="img/sponsor-placeholder.png" alt="Sponsor logo">
+          </div>
+        </div>
+        <div class="col-md-4 second-column">
+          <div class="sponsor-img">
+            <img src="img/sponsor-placeholder.png" alt="Sponsor logo">
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="sponsor-img">
+            <img src="img/sponsor-placeholder.png" alt="Sponsor logo">
+          </div>
+        </div>
+      </div>
+      <div class="sponsor-cta">
+        <a href="#" class="button-primary button-sponsors">Become a Sponsor</a>
+      </div>
+    </div>
+  </section>
+  <!-- Sposnors Section End -->
+  <!-- FAQs Section -->
+  <section class="faq" id="faq">
+    <div class="container">
+      <div class="row">
+        <div class="section-heading">
+          <span class="lnr lnr-funnel"></span>
+          <h4>Frequently Asked Questions</h4>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+          <div class="row">
+            <div class="faq-accordian">
+              <div class="panel"> <a class="panel-heading collapsed" data-toggle="collapse" href="#faq-answer-1"><h6>What topics will be covered in this conference ?</h6></a>
+                <div id="faq-answer-1" class="panel-collapse collapse">
+                  <div class="panel-body">Leggings blog plaid man bun. Kitsch readymade everyday carry banh mi put a bird on it art party gentrify portland next level green juice.</div>
+                </div>
+              </div>
+              <div class="panel"> <a class="panel-heading collapsed" data-toggle="collapse" href="#faq-answer-2"><h6>What is date of the conference ?</h6></a>
+                <div id="faq-answer-2" class="panel-collapse collapse">
+                  <div class="panel-body">Leggings blog plaid man bun. Kitsch readymade everyday carry banh mi put a bird on it art party gentrify portland next level green juice.</div>
+                </div>
+              </div>
+              <div class="panel"> <a class="panel-heading collapsed" data-toggle="collapse" href="#faq-answer-3"><h6>Who is this conference for ?</h6></a>
+                <div id="faq-answer-3" class="panel-collapse collapse">
+                  <div class="panel-body">Leggings blog plaid man bun. Kitsch readymade everyday carry banh mi put a bird on it art party gentrify portland next level green juice.</div>
+                </div>
+              </div>
+              <div class="panel"> <a class="panel-heading collapsed" data-toggle="collapse" href="#faq-answer-4"><h6>What is the duration of the conference ?</h6></a>
+                <div id="faq-answer-4" class="panel-collapse collapse">
+                  <div class="panel-body">Leggings blog plaid man bun. Kitsch readymade everyday carry banh mi put a bird on it art party gentrify portland next level green juice.</div>
+                </div>
+              </div>
+              <div class="panel"> <a class="panel-heading collapsed" data-toggle="collapse" href="#faq-answer-5"><h6>When does the booking start for the conference ?</h6></a>
+                <div id="faq-answer-5" class="panel-collapse collapse">
+                  <div class="panel-body">Leggings blog plaid man bun. Kitsch readymade everyday carry banh mi put a bird on it art party gentrify portland next level green juice.</div>
+                </div>
+              </div>
+              <div class="panel"> <a class="panel-heading collapsed" data-toggle="collapse" href="#faq-answer-6"><h6>Can I bring along a guest ?</h6></a>
+                <div id="faq-answer-6" class="panel-collapse collapse">
+                  <div class="panel-body">Leggings blog plaid man bun. Kitsch readymade everyday carry banh mi put a bird on it art party gentrify portland next level green juice.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- FAQs Section End -->
+  <!-- Pricing Section -->
+  <section class="pricing" id="pricing">
+    <div class="container">
+      <div class="row">
+        <div class="section-heading">
+          <span class="lnr lnr-tag"></span>
+          <h4>Ticket Prices</h4>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-3">
+          <div class="price-table">
+            <div class="table-header">
+              <p class="plan-name">Basic</p>
+              <h2 class="price">25<span class="currency">$</span></h2>
+            </div>
+            <div class="table-body">
+              <ul class="features">
+                <li>Access to all sessions</li>
+                <li>Free Breakfast</li>
+                <li>Q &amp; A Session with speakers</li>
+                <li>Freegan slow-carb semiotics</li>
+                <li>Pitchfork intelligentsia hoodie </li>
+              </ul>
+              <a href="#" class="button-primary button-price-table">Register</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="price-table">
+            <div class="table-header">
+              <p class="plan-name">Premium</p>
+              <h2 class="price">45<span class="currency">$</span></h2>
+            </div>
+            <div class="table-body">
+              <ul class="features">
+                <li>Access to all sessions</li>
+                <li>Free Breakfast</li>
+                <li>Q &amp; A Session with speakers</li>
+                <li>Freegan slow-carb semiotics</li>
+                <li>Pitchfork intelligentsia hoodie </li>
+              </ul>
+              <a href="#" class="button-primary button-price-table">Register</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="price-table">
+            <div class="table-header">
+              <p class="plan-name">Gold</p>
+              <h2 class="price">65<span class="currency">$</span></h2>
+            </div>
+            <div class="table-body">
+              <ul class="features">
+                <li>Access to all sessions</li>
+                <li>Free Breakfast</li>
+                <li>Q &amp; A Session with speakers</li>
+                <li>Freegan slow-carb semiotics</li>
+                <li>Pitchfork intelligentsia hoodie </li>
+              </ul>
+              <a href="#" class="button-primary button-price-table">Register</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="price-table">
+            <div class="table-header">
+              <p class="plan-name">Platinum</p>
+              <h2 class="price">85<span class="currency">$</span></h2>
+            </div>
+            <div class="table-body">
+              <ul class="features">
+                <li>Access to all sessions</li>
+                <li>Free Breakfast</li>
+                <li>Q &amp; A Session with speakers</li>
+                <li>Freegan slow-carb semiotics</li>
+                <li>Pitchfork intelligentsia hoodie </li>
+              </ul>
+              <a href="#" class="button-primary button-price-table">Register</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Pricing Section End -->
+  <!-- Final CTA section -->
+  <section class="final-cta" id="final-cta">
+    <h4 class="cta-sentence">Limited seating available. Hurry &amp; book your spot now.</h4>
+    <div class="cta-button">
+      <a href="#" class="button-primary button-cta" data-toggle="modal" data-target="#registerModal">Register Today</a>
+    </div>
+  </section>
+  <!-- Final CTA section End -->
+  <section class="contact" id="contact">
+    <div id="map"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-5 col-md-offset-7">
+          <div class="row">
+            <div class="contact-card">
+              <div class="section-heading">
+                <span class="lnr lnr-bubble"></span>
+                <h4>Contact Us</h4>
+              </div>
+              <form class="contact-form" id="contact-form">
+                <h6 class="email-success">Your message was successfully sent!</h6>
+                <h6 class="email-failed">Something went wrong with your submission.</h6>
+                <div class="col-md-12">
+                  <input class="form-control input-box" id="name" type="text" name="name" placeholder="Your Name" required>
+                </div>
+                <div class="col-md-12">
+                  <input class="form-control input-box" id="email" type="email" name="email" placeholder="Your Email" required>
+                </div>
+                <div class="col-md-12">
+                  <textarea class="form-control textarea-box" id="message" rows="5" name="message" placeholder="Message" required></textarea>
+                </div>
+                <button class="btn button-primary button-form" type="submit" id="submit" name="submit">Send Your Message</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer id="eventster-footer" class="eventster-footer">
+    <div class="logo">
+      <img src="img/logo.png" alt="Eventster">
+    </div>
+    <div class="social-icons">
+      <ul class="eventster-social">
+        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+        <li><a href="#"><i class="fa fa- fa-instagram"></i></a></li>
+        <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+        <li><a href="#"><i class="fa fa-envelope"></i></a></li>
+        <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+      </ul>
+    </div>
+    <div class="copyright">
+      <p>&copy; Eventster Landing page Designed by Paperboat Designs</p>
+    </div>
+    <div class="back-to-top">
+      <a href="#0" class="back-to-top"><span class="lnr lnr-chevron-up-circle"></span></a>
+    </div>
+  </footer>
+  <!--=============================================>>>>>
+  = JS Libraries =
+  ===============================================>>>>-->
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+  <script src="js/plugins/plugins.min.js"></script>
+  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
+  <script src="js/main.js"></script>
+  <!--= End of JS Libraries =*/-->
+  <!--=============================================<<<<<-->
+</body>
+<!--= End of Body =*/-->
+<!--=============================================<<<<<-->
+
+</html>

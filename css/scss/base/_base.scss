@@ -1,0 +1,140 @@
+////////////////////////////////////
+//  Base Styles
+///////////////////////////////////
+html {
+  font-size: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Border Box Fix */
+*,
+*:after,
+*:before {
+  @include prefixer(box-sizing,border-box, webkit moz spec);
+}
+/* Selection Color */
+@include selection {
+  background-color: $accent;
+  color: $light-1;
+}
+body {
+  background-color: $light-2;
+  font-family: $font-body;
+  font-size: $baes-font-size;
+  line-height: $base-line-height;
+  color: $dark-2;
+  text-align: center;
+  overflow-x: hidden;
+}
+/* Typography */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $font-heading;
+  color: $dark-1;
+  line-height: 1.1;
+  font-weight: normal;
+  margin: 0;
+}
+h1 {
+  font-size: rem(56);
+}
+h2 {
+  font-size: rem(48);
+}
+h3 {
+  font-size: rem(40);
+}
+h4 {
+  font-size: rem(32);
+}
+h5 {
+  font-size: rem(24);
+}
+h6 {
+  font-size: rem(16);
+}
+p {
+  margin: 0;
+}
+/* Buttons and Links Global */
+a,
+button {
+  &:active,
+  &:focus,
+  &:hover {
+    outline: 0 !important ;
+    text-decoration: none;
+    box-shadow: none;
+  }
+}
+/* Section Styles Global */
+section {
+  padding: $x-large 0;
+  border-bottom: 1px solid $stroke;
+  @include respond-to(tablet) {
+    padding: $large 0;
+  }
+}
+.section-heading {
+  margin-bottom: $large;
+  span {
+    font-size: rem(32);
+    color: $accent;
+    margin-bottom: $micro;
+  }
+}
+////////////////////////////////////
+//  Base Styles End
+///////////////////////////////////
+/*----------- Preloader -----------*/
+.preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: $dark-1;
+  z-index: 99999;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+.pulse {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-top: - $large/2;
+  margin-left: - $large/2;
+  width: $large;
+  height: $large;
+  text-align: center;
+  background-color: $accent;
+  border-radius: 100%;
+  @include animation(pulse 1.0s infinite ease-in-out);
+}
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-transform: scale(0);
+  }
+  100% {
+    -webkit-transform: scale(1.0);
+    opacity: 0;
+  }
+}
+@keyframes pulse {
+  0% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  }
+  100% {
+    -webkit-transform: scale(1.0);
+    transform: scale(1.0);
+    opacity: 0;
+  }
+}
+/*----------- Preloader Styles End -----------*/

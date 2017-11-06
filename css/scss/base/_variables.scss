@@ -1,0 +1,60 @@
+////////////////////////////////////
+//  Plugins Settings
+///////////////////////////////////
+
+////////////////////
+//Bourbon
+///////////////////
+$prefix-for-webkit: true;
+$prefix-for-mozilla: true;
+$prefix-for-spec: true;
+
+////////////////////
+//Breakpoint
+///////////////////
+@include breakpoint-set( 'default feature', 'max-width');
+@include add-breakpoint( 'laptop', 'only screen' 991px);
+@include add-breakpoint( 'tablet', 'only screen' 767px);
+@include add-breakpoint( 'phone', 'only screen' 479px);
+@include add-breakpoint( 'sphone', 'only screen' 320px);
+@include add-breakpoint('retina','min-resolution' 1.5dppx);
+////////////////////////////////////
+//  Settings End
+///////////////////////////////////
+
+
+////////////////////////////////////
+//  Variables
+///////////////////////////////////
+////////////////////
+
+//Color Variables
+///////////////////
+$dark-1: #20202f;
+$dark-2: #6b7684;
+$light-1: #ffffff;
+$light-2: #f6f6f8;
+$stroke: #e0dfe6;
+$accent: #ff512f;
+
+////////////////////
+//Spacing Variables
+///////////////////
+$micro: 16px;
+$mini: 24px;
+$small: 32px;
+$medium: 48px;
+$large: 64px;
+$x-large: 80px;
+$xx-large: 96px;
+
+////////////////////
+//Typography Variables
+///////////////////
+$font-heading: 'Roboto Slab', serif;
+$font-body: 'Roboto', sans-serif;
+$baes-font-size: 16px;
+$base-line-height: 1.5;
+ ////////////////////////////////////
+//  Variables End
+///////////////////////////////////

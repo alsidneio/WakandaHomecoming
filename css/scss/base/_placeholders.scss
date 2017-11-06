@@ -1,0 +1,14 @@
+/*----------- Miscelleneous Styles -----------*/
+%card {
+  background-color: $light-1;
+  @include prefixer(box-shadow, 0 0 16px 0 rgba(32, 32, 47, 0.16), webkit moz spec);
+}
+%section-no-border {
+  border-bottom: none;
+}
+%hotel-card-background {
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-size: cover;
+}
+/*----------- Miscelleneous Styles End -----------*/

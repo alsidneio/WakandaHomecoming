@@ -1,0 +1,29 @@
+/*----------- Venue Styles -----------*/
+.venue {
+  background-image: url("../img/venue-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  @extend %section-no-border;
+  .venue-card {
+    @extend %card;
+    margin: 0 auto;
+    .section-heading{
+      margin-bottom: $medium;
+    }
+    padding: $large 0;
+    .venue-address {
+      margin-bottom: $medium;
+    }
+    @include respond-to(tablet) {
+      width: 75%;
+    }
+    @include respond-to(phone) {
+      width: 85%
+    }
+    @include respond-to(sphone) {
+      width: 90%;
+    }
+  }
+}
+/*----------- Venue Styles End -----------*/

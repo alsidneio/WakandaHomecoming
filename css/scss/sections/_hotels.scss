@@ -1,0 +1,78 @@
+/*----------- Recommended Hotel Styles -----------*/
+.hotels {
+  .hotel-card {
+    @extend %card;
+    margin-bottom: $small;
+    .hotel-description {
+      padding: $small $small $small $mini;
+      margin-left: 50%;
+      background: $light-1;
+      @include clearfix();
+      .name-and-reservation {
+        float: left;
+        text-align: left;
+        h5 {
+          margin-bottom: $micro;
+        }
+        a {
+          color: $accent;
+        }
+      }
+      .price-and-rating {
+        float: right;
+        text-align: right;
+        h5 {
+          margin-bottom: $micro;
+        }
+        .currency {
+          font-size: rem(16);
+        }
+        .lnr {
+          color: $accent;
+        }
+      }
+      @include respond-to(tablet) {
+        margin-left: 0;
+      }
+    }
+    @include respond-to(tablet) {
+      width: 90%;
+      margin: 0 auto $small;
+    }
+    @include respond-to(phone) {
+      h5 {
+        font-size: rem($micro);
+      }
+    }
+  }
+  .hotel-card-1 {
+    background-image: url("../img/hotel-placeholder.jpg");
+    @extend %hotel-card-background;
+    @include respond-to(retina) {
+      background-image: url("../img/hotel-placeholder@2x.jpg");
+    }
+  }
+  .hotel-card-2 {
+    background-image: url("../img/hotel-placeholder.jpg");
+    @extend %hotel-card-background;
+    @include respond-to(retina) {
+      background-image: url("../img/hotel-placeholder@2x.jpg");
+    }
+  }
+  .hotel-card-3 {
+    background-image: url("../img/hotel-placeholder.jpg");
+    @extend %hotel-card-background;
+    @include respond-to(retina) {
+      background-image: url("../img/hotel-placeholder@2x.jpg");
+    }
+  }
+  .hotel-card-4 {
+    background-image: url("../img/hotel-placeholder.jpg");
+    margin-bottom: 0;
+    @extend %hotel-card-background;
+    @include respond-to(retina) {
+      background-image: url("../img/hotel-placeholder@2x.jpg");
+    }
+  }
+}
+/*----------- Recommended Hotel Styles  End -----------*/

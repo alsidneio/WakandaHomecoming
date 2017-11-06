@@ -1,0 +1,81 @@
+/*----------- Conact and Map Styles -----------*/
+/* Contact and Map */
+.contact {
+  @extend %section-no-border;
+  padding: $large 0;
+  position: relative;
+  /* map */
+  #map {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    @include respond-to(laptop) {
+      top: 0;
+      left: 0;
+      position: relative;
+      width: 100%;
+      height: $x-large*3;
+    }
+  }
+  .contact-card {
+    @extend %card;
+    padding: $medium $mini;
+    .section-heading {
+      margin-bottom: $medium;
+    }
+    @include respond-to(laptop) {
+      margin: $medium auto 0;
+      width: 80%;
+    }
+    @include respond-to(phone) {
+      width: 90%;
+    }
+  }
+  @include respond-to(laptop) {
+    padding-top: 0;
+  }
+}
+/*----------- Conact and Map Styles End -----------*/
+/*----------- Footer Styles -----------*/
+.eventster-footer {
+  padding: $medium 0;
+  background-color: $dark-1;
+  .logo {
+    margin-bottom: $mini;
+  }
+  .social-icons {
+    margin-bottom: $small;
+    .eventster-social {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      li {
+        display: inline-block;
+        margin: 0 $micro/2 0 0;
+        a {
+          color: $light-2;
+          @include transition(all .1s ease-in-out);
+          &:active,
+          &:focus,
+          &:hover {
+            color: $accent;
+          }
+        }
+      }
+    }
+  }
+  /* Copyright and back to top button */
+  .copyright {
+    color: $light-2;
+    margin-bottom: $medium;
+  }
+  .back-to-top {
+    a {
+      color: $light-1;
+      font-size: rem(32);
+    }
+  }
+}
+/*----------- Footer Styles End -----------*/
