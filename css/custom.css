@@ -1,4 +1,5 @@
 .hero
 {
-background-image: url("../img/black-panther-logo.jpg");
+background-image: url("../img/black-panther-logo.jpg");  
+    background-size: 100% 100%;
 }
