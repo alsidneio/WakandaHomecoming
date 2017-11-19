@@ -43,7 +43,7 @@ $(document).ready(function() {
   /*----------- Hero Countdown -----------*/
   var $countdown = $('.event-countdown');
   $countdown.jCounter({
-    date: '14 december 2016 12:00:00', //format: DD month YYYY HH:MM:SS
+    date: '16 February 2018 19:30:00', //format: DD month YYYY HH:MM:SS
     serverDateSource: 'php/dateandtime.php',
     timezone: 'Asia/Kolkata', // Define your timezone.
     format: 'dd:hh:mm:ss',
