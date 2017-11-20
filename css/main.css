@@ -533,7 +533,7 @@ section {
 
 .sticky-navigation .navbar-brand {
   height: 32px;
-  padding: 16px;
+  padding: 12px;
   margin: auto;
   -webkit-backface-visibility: hidden;
 }
