@@ -533,7 +533,7 @@ section {
 
 .sticky-navigation .navbar-brand {
   height: 32px;
-  padding: 16px;
+  padding: 12px;
   margin: auto;
   -webkit-backface-visibility: hidden;
 }
@@ -593,7 +593,8 @@ section {
   display: inline-block;
   padding: 8px 40px;
   margin-bottom: 32px;
-  background-color: #ffffff;
+  text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+  /*background-color: #ffffff;*/
   color: #ff512f;
 }
 
@@ -603,6 +604,7 @@ section {
 
 .hero .intro h1, .hero .intro p {
   color: #ffffff;
+  text-shadow: -1px 0 grey, 0 1px grey, 1px 0 grey, 0 -1px grey;
 }
 
 .hero .intro h1 {
