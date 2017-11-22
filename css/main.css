@@ -31,12 +31,12 @@ html {
 /* Selection Color */
 
 ::-moz-selection {
-  background-color: #ff512f;
+  background-color: #D4AF37;
   color: #ffffff;
 }
 
 ::selection {
-  background-color: #ff512f;
+  background-color: #D4AF37;
   color: #ffffff;
 }
 
@@ -55,7 +55,7 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Roboto Slab", serif;
-  color: #20202f;
+  color: #000000;
   line-height: 1.1;
   font-weight: normal;
   margin: 0;
@@ -118,7 +118,7 @@ section {
 
 .section-heading span {
   font-size: 2rem;
-  color: #ff512f;
+  color: #D4AF37;
   margin-bottom: 16px;
 }
 
@@ -131,7 +131,7 @@ section {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #20202f;
+  background-color: #000000;
   z-index: 99999;
   height: 100%;
   width: 100%;
@@ -147,7 +147,7 @@ section {
   width: 64px;
   height: 64px;
   text-align: center;
-  background-color: #ff512f;
+  background-color: #D4AF37;
   border-radius: 100%;
   -webkit-animation: pulse 1s infinite ease-in-out;
   -moz-animation: pulse 1s infinite ease-in-out;
@@ -221,7 +221,7 @@ section {
   font-weight: 700;
   vertical-align: middle;
   color: #ffffff;
-  background-color: #20202f;
+  background-color: #000000;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
@@ -229,7 +229,7 @@ section {
 
 .button-primary:active, .button-primary:focus, .button-primary:hover {
   background-color: #ffffff;
-  color: #20202f;
+  color: #000000;
 }
 
 .button-video img {
@@ -241,7 +241,7 @@ section {
   padding: 8px 20px;
   vertical-align: middle;
   color: #ffffff;
-  background-color: #ff512f;
+  background-color: #D4AF37;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
@@ -249,7 +249,7 @@ section {
 
 .button-timeline:active, .button-timeline:focus, .button-timeline:hover {
   color: #ffffff;
-  background-color: #20202f;
+  background-color: #000000;
 }
 
 .button-sub {
@@ -265,17 +265,17 @@ section {
 
 .button-price-table:active, .button-price-table:focus, .button-price-table:hover {
   color: #ffffff;
-  background: #ff512f;
+  background: #D4AF37;
 }
 
 .button-cta {
   padding: 16px 40px;
-  background: #ff512f;
+  background: #D4AF37;
 }
 
 .button-sponsors:active, .button-sponsors:focus, .button-sponsors:hover {
   color: #ffffff;
-  background: #ff512f;
+  background: #D4AF37;
 }
 
 .button-form {
@@ -286,7 +286,7 @@ section {
 
 .button-form:active, .button-form:focus, .button-form:hover {
   color: #ffffff;
-  background: #ff512f;
+  background: #D4AF37;
 }
 
 
@@ -306,7 +306,7 @@ section {
 
 .subscription-form .subscription-failure a, .subscription-form .subscription-success a {
   text-decoration: none;
-  color: #20202f;
+  color: #000000;
 }
 
 .subscription-form .input-box {
@@ -320,7 +320,7 @@ section {
   line-height: 1;
   font-style: italic;
   background: #ffffff;
-  color: #ff512f;
+  color: #D4AF37;
   -webkit-transition: all 0.1s ease-in-out;
   -moz-transition: all 0.1s ease-in-out;
   transition: all 0.1s ease-in-out;
@@ -357,7 +357,7 @@ section {
 .contact-form .email-failed, .contact-form .email-success {
   display: none;
   margin: 16px 0;
-  color: #ff512f;
+  color: #D4AF37;
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
@@ -379,7 +379,7 @@ section {
 .contact-form .input-box:active, .contact-form .input-box:focus, .contact-form .textarea-box:active, .contact-form .textarea-box:focus {
   outline: 0;
   box-shadow: none;
-  border: 1px solid #20202f;
+  border: 1px solid #000000;
 }
 
 .contact-form .input-box {
@@ -426,7 +426,7 @@ section {
 }
 
 .register-modal .modal-header .close {
-  color: #20202f;
+  color: #000000;
   opacity: 1;
   font-size: 1.5rem;
   -webkit-transition: all 0.1s ease-in-out;
@@ -435,7 +435,7 @@ section {
 }
 
 .register-modal .modal-header .close:hover {
-  color: #ff512f;
+  color: #D4AF37;
 }
 
 .register-modal .modal-header .modal-title {
@@ -454,7 +454,7 @@ section {
 
 .register-modal .modal-body .content .modal-register .register-failed, .register-modal .modal-body .content .modal-register .register-success {
   margin-bottom: 8px;
-  color: #ff512f;
+  color: #D4AF37;
   display: none;
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
@@ -478,7 +478,7 @@ section {
 .register-modal .modal-body .content .modal-register .combo-box:active, .register-modal .modal-body .content .modal-register .combo-box:focus, .register-modal .modal-body .content .modal-register .input-box:active, .register-modal .modal-body .content .modal-register .input-box:focus {
   outline: 0;
   box-shadow: none;
-  border: 1px solid #20202f;
+  border: 1px solid #000000;
 }
 
 .register-modal .modal-body .content .modal-register .combo-box {
@@ -488,7 +488,7 @@ section {
 .register-modal .modal-body .content .modal-register label {
   margin-bottom: 8px;
   font-weight: 400;
-  color: #20202f;
+  color: #000000;
 }
 
 .register-modal .modal-footer {
@@ -539,28 +539,28 @@ section {
 }
 
 .sticky-navigation .eventster-nav .current a {
-  color: #ff512f;
+  color: #D4AF37;
 }
 
 .sticky-navigation .eventster-nav li a {
   height: 48px;
-  color: #20202f;
+  color: #000000;
 }
 
 .sticky-navigation .eventster-nav li a:active, .sticky-navigation .eventster-nav li a:focus, .sticky-navigation .eventster-nav li a:hover {
-  color: #ff512f;
+  color: #D4AF37;
   background-color: transparent;
 }
 
 .navbar-header .navbar-toggle {
   background: #ffffff;
-  color: #20202f;
+  color: #000000;
   border: none;
 }
 
 .navbar-header .navbar-toggle:focus, .navbar-header .navbar-toggle:hover, .navbar-header .navbar-toggle:active {
   background: transparent;
-  color: #ff512f;
+  color: #D4AF37;
 }
 
 
@@ -593,9 +593,9 @@ section {
   display: inline-block;
   padding: 8px 40px;
   margin-bottom: 32px;
-  text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+  text-shadow: -1px 0 #996515, 0 1px #996515, 1px 0 #D4AF37, 0 -1px lightgrey;
   /*background-color: #ffffff;*/
-  color: #ff512f;
+  color: #D4AF37;
 }
 
 .hero .intro {
@@ -736,7 +736,7 @@ section {
 }
 
 .speaker-card .speaker-info .speaker-social a:hover {
-  color: #ff512f;
+  color: #D4AF37;
 }
 
 .speaker-card .speaker-description {
@@ -833,7 +833,7 @@ section {
 .timeline ul li div .time {
   font-size: 1rem;
   font-weight: 400;
-  color: #ff512f;
+  color: #D4AF37;
 }
 
 .timeline ul li:nth-child(odd) div {
@@ -968,7 +968,7 @@ section {
 }
 
 .hotels .hotel-card .hotel-description .name-and-reservation a {
-  color: #ff512f;
+  color: #D4AF37;
 }
 
 .hotels .hotel-card .hotel-description .price-and-rating {
@@ -985,7 +985,7 @@ section {
 }
 
 .hotels .hotel-card .hotel-description .price-and-rating .lnr {
-  color: #ff512f;
+  color: #D4AF37;
 }
 
 @media only screen and (max-width: 767px) {
@@ -1175,8 +1175,8 @@ section {
   right: 24px;
   height: 8px;
   width: 8px;
-  border-left: 1px solid #ff512f;
-  border-top: 1px solid #ff512f;
+  border-left: 1px solid #D4AF37;
+  border-top: 1px solid #D4AF37;
   -webkit-transform: rotate(45deg);
   -moz-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
@@ -1187,8 +1187,8 @@ section {
 .panel a.panel-heading.collapsed:after {
   top: 20px;
   border: none;
-  border-right: 1px solid #ff512f;
-  border-bottom: 1px solid #ff512f;
+  border-right: 1px solid #D4AF37;
+  border-bottom: 1px solid #D4AF37;
 }
 
 @media only screen and (max-width: 767px) {
@@ -1227,7 +1227,7 @@ section {
 }
 
 .pricing .table-header {
-  background: #20202f;
+  background: #000000;
   padding: 32px 0 48px;
 }
 
@@ -1277,7 +1277,7 @@ section {
 
 .final-cta {
   padding: 48px 0;
-  background-color: #20202f;
+  background-color: #000000;
 }
 
 .final-cta .cta-sentence {
@@ -1353,7 +1353,7 @@ section {
 
 .eventster-footer {
   padding: 48px 0;
-  background-color: #20202f;
+  background-color: #000000;
   /* Copyright and back to top button */
 }
 
@@ -1384,7 +1384,7 @@ section {
 }
 
 .eventster-footer .social-icons .eventster-social li a:active, .eventster-footer .social-icons .eventster-social li a:focus, .eventster-footer .social-icons .eventster-social li a:hover {
-  color: #ff512f;
+  color: #D4AF37;
 }
 
 .eventster-footer .copyright {
