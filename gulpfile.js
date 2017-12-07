@@ -1,5 +1,5 @@
 /*=============================================>>>>>
-= Dependencis =
+= Dependencies =
 ===============================================>>>>>*/
 var gulp = require('gulp'),
   uglify = require('gulp-uglify'),
@@ -97,7 +97,8 @@ gulp.task('scripts', function() {
 gulp.task('browser-sync', function() {
   browserSync.init({
     server: {
-      baseDir: "./"
+      baseDir: "./",
+      index : "index.html"
     }
   });
 });
@@ -108,6 +109,16 @@ gulp.task('watch', function() {
   gulp.watch('**/*.html', ['html']);
   gulp.watch(srcPath.jsPath + 'main.js', ['scripts']);
 });
+
+/*----------Using gulp to deplot site on Netlify-------------------*/
+// var netlify = require('gulp-netlify')
+// gulp.task('deploy', function () {
+//   gulp.src('./public/**/*')
+//     .pipe(netlify({
+//       site_id: NETLIFY_SITE_ID,
+//       access_token: NETLIFY_ACCESS_TOKEN
+//     }))
+// })
 
 /*----------- Default Task -----------*/
 gulp.task('default', ['styles', 'html', 'scripts', 'browser-sync', 'watch']);
