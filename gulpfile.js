@@ -10,6 +10,7 @@ var gulp = require('gulp'),
   imagemin = require('gulp-imagemin'),
   plumber = require('gulp-plumber'),
   browserSync = require('browser-sync'),
+  netlify = require('gulp-netlify'),
   reload = browserSync.reload;
 /*= End of Dependencis =*/
 /*=============================================<<<<<*/
@@ -111,7 +112,6 @@ gulp.task('watch', function() {
 });
 
 /*----------Using gulp to deplot site on Netlify-------------------*/
-// var netlify = require('gulp-netlify')
 // gulp.task('deploy', function () {
 //   gulp.src('./public/**/*')
 //     .pipe(netlify({
