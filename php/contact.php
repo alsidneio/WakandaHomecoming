@@ -19,8 +19,8 @@ if( isset($name) && isset($email) && isset($message) && is_email_valid($email) )
 	}
 
 	// Email will be sent to this email id with the following subject
-	$to = "author@paperboatdesigns.co";  // Replace with your own email
-	$subject = "$name sent from Eventster contact form"; // Default Subject of the mail
+	$to = "wakanda.info@gmail.com";  // Replace with your own email
+	$subject = "$name has a question about the homecoming"; // Default Subject of the mail
 
 	// HTML Elements for Email Body
 	$body = <<<EOD
