@@ -577,7 +577,15 @@ section {
   background-position: top center;
   background-size: cover;
 }
-
+.hero:before{
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: rgba(0,0,0,0.2);
+}
 .hero .hero-content {
   height: 100%;
   padding-bottom: 160px;
@@ -593,13 +601,12 @@ section {
   display: inline-block;
   padding: 8px 40px;
   margin-bottom: 32px;
-  text-shadow: -1px 0 #996515, 0 1px #996515, 1px 0 #D4AF37, 0 -1px lightgrey;
   /*background-color: #ffffff;*/
   color: #D4AF37;
 }
 
 .hero .intro {
-  margin-bottom: 80px;
+  margin-bottom: 50px;
 }
 
 .hero .intro h1, .hero .intro p {
@@ -608,7 +615,40 @@ section {
 }
 
 .hero .intro h1 {
-  margin: 0 0 32px;
+  margin: 0 0 16px;
+  display: inline-block;
+  padding-bottom: 5px;
+  position: relative;
+}
+
+.hero .intro h1:before{
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: 1px;
+  bottom: 0;
+  left: 25%;
+  border-bottom: 1px solid white;
+}
+
+.hero .intro h5,
+.hero .description h5{
+  color: white;
+}
+
+.hero .description h5 {
+  font-size: 1rem;
+  margin-bottom:20px;
+}
+
+.hero .description {
+  background: rgba(0, 0, 0, 0.7);
+  width: 75%;
+  margin: 0 auto;
+  text-align: left;
+  color: white;
+  margin-bottom: 50px;
+  padding: 30px 20px;
 }
 
 .hero .cta {
@@ -918,6 +958,11 @@ section {
   margin-bottom: 48px;
 }
 
+.venue-address h6 {
+  margin-bottom: 5px;
+  font-size: 1.2rem;
+}
+
 @media only screen and (max-width: 767px) {
   .venue .venue-card {
     width: 75%;
@@ -1050,6 +1095,39 @@ section {
 
 
 /*----------- Recommended Hotel Styles  End -----------*/
+
+/*----------- Description Style -----------*/
+.description-card {
+  background-color: #ffffff;
+  -webkit-box-shadow: 0 0 16px 0 rgba(32, 32, 47, 0.16);
+  -moz-box-shadow: 0 0 16px 0 rgba(32, 32, 47, 0.16);
+  box-shadow: 0 0 16px 0 rgba(32, 32, 47, 0.16);
+  margin: 0 auto;
+  padding: 30px;
+  width: 75%;
+}
+.description-image {
+  float: left;
+  width:25%;
+}
+.description-image img {
+  max-width: 100%;
+}
+.description-text {
+  float: right;
+  width:75%;
+  text-align:left;
+  padding: 0px 30px;
+}
+
+.description-text h5 {
+  font-size: 1.5rem;
+}
+
+.desc-text {
+  margin: 20px 0;
+}
+/*----------- Description Style End -----------*/
 
 
 /*----------- Testimonials Styles -----------*/

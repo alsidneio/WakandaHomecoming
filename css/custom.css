@@ -1,5 +1,107 @@
 .hero
 {
-background-image: url("../img/black-panther-logo.jpg");  
+    background-image: url("../img/black-panther-logo.jpg");  
     background-size: 100% 100%;
 }
+
+  .square{
+    box-sizing:border-box;
+    margin-left:-0.4em;
+    position:relative;
+    overflow:hidden;
+  }
+  .square a{
+    position:static;
+    font-size:100%;
+    padding:0.2em 0.4em;
+  }
+  .square:before,.square:after{
+    content: "";
+    box-sizing:border-box;
+    transition:0.25s all ease;
+    -webkit-backface-visibility:hidden;
+            backface-visibility:hidden;
+    position:absolute;
+    width:5px;
+    width:0.35rem;
+    height:0;
+    background:#000000;
+  }
+  .square:before{
+    left:0;
+    bottom:-0.2em;
+  }
+  .square:after{
+    right:0;
+    top:-0.2em;
+  }
+  .square a:before{
+    left:0;
+    transition:0.25s all ease;
+  }
+  .square a:after{
+    right:0;
+    transition:0.25s all ease;
+  }
+  .square:hover:before,.square:hover:after{
+    height:calc(100% + 0.4em);
+  }
+  .square:hover a:before,.square:hover a:after{
+    width:100%;
+  }
+  .grow { transition: all .2s ease-in-out; }
+  .grow:hover { transform: scale(1.1); }
+
+  
+  .venue-address a, a > span {
+    position: relative;
+    color: inherit;
+    text-decoration: none;
+    line-height: 24px;
+  }
+  .venue-address a:before, a:after, a > span:before, a > span:after {
+    content: '';
+    position: absolute;
+    transition: transform .5s ease;
+  }
+  .square-effect {
+    display: inline-block;
+    overflow: hidden;
+  }
+  .square-effect:before, .square-effect:after {
+    right: 0;
+    bottom: 0;
+    background: #D4AF37;
+  }
+  .square-effect:before {
+    width: 100%;
+    height: 2px;
+    transform: translateX(-100%);
+  }
+  .square-effect:after {
+    width: 2px;
+    height: 100%;
+    transform: translateY(100%);
+  }
+  .square-effect > span {
+    display: block;
+    padding: 10px;
+  }
+  .square-effect > span:before, .square-effect > span:after {
+    left: 0;
+    top: 0;
+    background: #D4AF37;
+  }
+  .square-effect > span:before {
+    width: 100%;
+    height: 2px;
+    transform: translateX(100%);
+  }
+  .square-effect > span:after {
+    width: 2px;
+    height: 100%;
+    transform: translateY(-100%);
+  }
+  .square-effect:hover:before, .square-effect:hover:after, .square-effect:hover > span:before, .square-effect:hover > span:after {
+    transform: translate(0, 0);
+  }
