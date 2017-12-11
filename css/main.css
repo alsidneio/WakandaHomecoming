@@ -767,10 +767,10 @@ section {
 
 /*----------- Venue Styles -----------*/
 .venue {
-  background-image: url("../img/venue-bg.jpg");
+  /* background-image: url("../img/venue-bg.jpg");
   background-repeat: no-repeat;
   background-position: top center;
-  background-size: cover;
+  background-size: cover; */
 }
 .venue .venue-card {
   margin: 0 auto;

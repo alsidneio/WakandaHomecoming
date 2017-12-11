@@ -3,3 +3,19 @@
 background-image: url("../img/black-panther-logo.jpg");  
     background-size: 100% 100%;
 }
+
+.killmonger , .tchalla{
+max-width:100%;
+max-height: 100%;
+}
+
+.venue{
+    background-color: #000;
+}
+
+#venue{
+    padding: 20px;
+}
+.countdown-card{
+    border: solid 1px #D4AF37;
+}
