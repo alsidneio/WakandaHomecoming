@@ -939,7 +939,7 @@ section {
 /*----------- Venue Styles -----------*/
 
 .venue {
-  background-image: url("../img/venue-bg.jpg");
+  background-image: url("../img/venue-bg2.png");
   background-repeat: no-repeat;
   background-position: top center;
   background-size: cover;
@@ -1098,6 +1098,7 @@ section {
 
 /*----------- Description Style -----------*/
 .description-card {
+  display: inline-flex;
   background-color: #ffffff;
   -webkit-box-shadow: 0 0 16px 0 rgba(32, 32, 47, 0.16);
   -moz-box-shadow: 0 0 16px 0 rgba(32, 32, 47, 0.16);
@@ -1107,17 +1108,15 @@ section {
   width: 75%;
 }
 .description-image {
-  float: left;
-  width:25%;
+  margin: auto;
+  padding: 0px;
 }
 .description-image img {
   max-width: 100%;
 }
 .description-text {
-  float: right;
-  width:75%;
   text-align:left;
-  padding: 0px 30px;
+  padding: 0px 0px 1px 30px;
 }
 
 .description-text h5 {
@@ -1127,6 +1126,19 @@ section {
 .desc-text {
   margin: 20px 0;
 }
+
+@media only screen and (max-width: 991px) {
+  .description-card {
+    display: block;
+  }
+  .description-image {
+    margin-bottom: 20px;
+  }
+  .description-image img {
+    max-height: 300px;
+  }
+}
+
 /*----------- Description Style End -----------*/
 
 
@@ -1360,7 +1372,7 @@ section {
 
 .final-cta .cta-sentence {
   color: #ffffff;
-  margin-bottom: 64px;
+  /*margin-bottom: 64px;*/
 }
 
 
