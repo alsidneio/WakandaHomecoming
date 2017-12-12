@@ -1,9 +1,18 @@
-.hero
-{
+  .hero
+  {
     background-image: url("../img/black-panther-logo.jpg");  
     background-size: 100% 100%;
-}
-
+  }
+  @media only screen and (max-width: 768px) {
+    .hero
+    {
+      background-size: auto 100%;
+      background-position: 75%;
+    }
+    .hero .description {
+        display:none;
+    }
+  }
   .square{
     box-sizing:border-box;
     margin-left:-0.4em;
