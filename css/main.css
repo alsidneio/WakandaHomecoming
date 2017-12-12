@@ -1,22 +1,35 @@
+/**
+ *
+ * Template name : Eventster
+   Author : Pankaj Chakraborty <author@paperboatdesigns.co>
+   Version : 1.0.1
+   Last Change : 1.0.1
+ *
+ */
+
+
 /*=============================================>>>>>
 = Global Styles =
 ===============================================>>>>>*/
+
 html {
   font-size: 100%;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
+
 /* Border Box Fix */
-*,
-*:after,
-*:before {
+
+*, *:after, *:before {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
+
 /* Selection Color */
+
 ::-moz-selection {
   background-color: #D4AF37;
   color: #ffffff;
@@ -37,15 +50,12 @@ body {
   overflow-x: hidden;
 }
 
+
 /* Typography */
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+
+h1, h2, h3, h4, h5, h6 {
   font-family: "Roboto Slab", serif;
-  color: #20202f;
+  color: #000000;
   line-height: 1.1;
   font-weight: normal;
   margin: 0;
@@ -79,21 +89,23 @@ p {
   margin: 0;
 }
 
+
 /* Buttons and Links Global */
-a:active, a:focus, a:hover,
-button:active,
-button:focus,
-button:hover {
+
+a:active, a:focus, a:hover, button:active, button:focus, button:hover {
   outline: 0 !important;
   text-decoration: none;
   box-shadow: none;
 }
 
+
 /* Section Styles Global */
+
 section {
   padding: 80px 0;
   border-bottom: 1px solid #e0dfe6;
 }
+
 @media only screen and (max-width: 767px) {
   section {
     padding: 64px 0;
@@ -103,20 +115,23 @@ section {
 .section-heading {
   margin-bottom: 64px;
 }
+
 .section-heading span {
   font-size: 2rem;
   color: #D4AF37;
   margin-bottom: 16px;
 }
 
+
 /*----------- Preloader -----------*/
+
 .preloader {
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #20202f;
+  background-color: #000000;
   z-index: 99999;
   height: 100%;
   width: 100%;
@@ -148,6 +163,7 @@ section {
     opacity: 0;
   }
 }
+
 @keyframes pulse {
   0% {
     -webkit-transform: scale(0);
@@ -159,8 +175,13 @@ section {
     opacity: 0;
   }
 }
+
+
 /*----------- Preloader Styles End -----------*/
+
+
 /*----------- Miscelleneous Styles -----------*/
+
 .register-modal .modal-content, .hero .countdown-card, .speaker-card, .timeline ul li div, .venue .venue-card, .hotels .hotel-card, .testimonials .testimonial-carousel .testimonial-card, .pricing .price-table, .contact .contact-card {
   background-color: #ffffff;
   -webkit-box-shadow: 0 0 16px 0 rgba(32, 32, 47, 0.16);
@@ -168,8 +189,7 @@ section {
   box-shadow: 0 0 16px 0 rgba(32, 32, 47, 0.16);
 }
 
-.schedule,
-.schedule-multiday, .venue, .pricing, .final-cta, .contact {
+.schedule, .schedule-multiday, .venue, .pricing, .final-cta, .contact {
   border-bottom: none;
 }
 
@@ -179,28 +199,37 @@ section {
   background-size: cover;
 }
 
+
 /*----------- Miscelleneous Styles End -----------*/
+
+
 /*=============================================>>>>>
 = Global Styles End =
 ===============================================>>>>>*/
+
+
 /*=============================================>>>>>
 = UI- Styles =
 ===============================================>>>>>*/
+
+
 /*----------- Button Styles -----------*/
+
 .button-primary {
   display: inline-block;
   padding: 16px 20px;
   font-weight: 700;
   vertical-align: middle;
   color: #ffffff;
-  background-color: #20202f;
+  background-color: #000000;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
+
 .button-primary:active, .button-primary:focus, .button-primary:hover {
   background-color: #ffffff;
-  color: #20202f;
+  color: #000000;
 }
 
 .button-video img {
@@ -217,9 +246,10 @@ section {
   -moz-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
+
 .button-timeline:active, .button-timeline:focus, .button-timeline:hover {
   color: #ffffff;
-  background-color: #20202f;
+  background-color: #000000;
 }
 
 .button-sub {
@@ -232,6 +262,7 @@ section {
 .button-price-table {
   padding: 8px 20px;
 }
+
 .button-price-table:active, .button-price-table:focus, .button-price-table:hover {
   color: #ffffff;
   background: #D4AF37;
@@ -252,25 +283,32 @@ section {
   padding: 16px 20px;
   border-radius: 0;
 }
+
 .button-form:active, .button-form:focus, .button-form:hover {
   color: #ffffff;
   background: #D4AF37;
 }
 
+
 /*----------- Button Styles End -----------*/
+
+
 /*----------- Form Styles -----------*/
+
+
 /* Subscription Form Mailchimp */
-.subscription-form .subscription-failure,
-.subscription-form .subscription-success {
+
+.subscription-form .subscription-failure, .subscription-form .subscription-success {
   margin-bottom: 32px;
   display: inline-block;
   color: #ffffff;
 }
-.subscription-form .subscription-failure a,
-.subscription-form .subscription-success a {
+
+.subscription-form .subscription-failure a, .subscription-form .subscription-success a {
   text-decoration: none;
-  color: #20202f;
+  color: #000000;
 }
+
 .subscription-form .input-box {
   height: 48px;
   width: 336px;
@@ -287,31 +325,36 @@ section {
   -moz-transition: all 0.1s ease-in-out;
   transition: all 0.1s ease-in-out;
 }
+
 .subscription-form .input-box:active, .subscription-form .input-box:focus {
   outline: none;
   box-shadow: none;
   border: none;
 }
+
 @media only screen and (max-width: 767px) {
   .subscription-form .input-box {
     width: 80%;
     margin: 0 auto 24px;
   }
 }
+
 @media only screen and (max-width: 479px) {
   .subscription-form .input-box {
     width: 85%;
   }
 }
+
 @media only screen and (max-width: 320px) {
   .subscription-form .input-box {
     width: 90%;
   }
 }
 
+
 /* Contact Form */
-.contact-form .email-failed,
-.contact-form .email-success {
+
+.contact-form .email-failed, .contact-form .email-success {
   display: none;
   margin: 16px 0;
   color: #D4AF37;
@@ -319,8 +362,8 @@ section {
   -moz-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
-.contact-form .input-box,
-.contact-form .textarea-box {
+
+.contact-form .input-box, .contact-form .textarea-box {
   padding: 16px 24px;
   margin-bottom: 24px;
   border: 1px solid #e0dfe6;
@@ -332,23 +375,28 @@ section {
   -moz-transition: all 0.1s ease-in-out;
   transition: all 0.1s ease-in-out;
 }
-.contact-form .input-box:active, .contact-form .input-box:focus,
-.contact-form .textarea-box:active,
-.contact-form .textarea-box:focus {
+
+.contact-form .input-box:active, .contact-form .input-box:focus, .contact-form .textarea-box:active, .contact-form .textarea-box:focus {
   outline: 0;
   box-shadow: none;
-  border: 1px solid #20202f;
+  border: 1px solid #000000;
 }
+
 .contact-form .input-box {
   height: 48px;
 }
 
+
 /* Contact Form End */
+
+
 /* Registration Modal */
+
 .register-modal .modal-dialog {
   width: 480px;
   margin: 0 auto;
 }
+
 @media only screen and (max-width: 479px) {
   .register-modal .modal-dialog {
     width: 80%;
@@ -357,6 +405,7 @@ section {
     padding: 16px 8px;
   }
 }
+
 @media only screen and (max-width: 320px) {
   .register-modal .modal-dialog {
     width: 90%;
@@ -365,38 +414,45 @@ section {
     padding: 16px 4px;
   }
 }
+
 .register-modal .modal-content {
   border-radius: 0;
   margin-top: 96px;
 }
+
 .register-modal .modal-header {
   padding: 16px;
   border: none;
 }
+
 .register-modal .modal-header .close {
-  color: #20202f;
+  color: #000000;
   opacity: 1;
   font-size: 1.5rem;
   -webkit-transition: all 0.1s ease-in-out;
   -moz-transition: all 0.1s ease-in-out;
   transition: all 0.1s ease-in-out;
 }
+
 .register-modal .modal-header .close:hover {
   color: #D4AF37;
 }
+
 .register-modal .modal-header .modal-title {
   margin-top: 16px;
   margin-left: 24px;
 }
+
 .register-modal .modal-body {
   padding: 24px 16px;
 }
+
 .register-modal .modal-body .content .modal-register {
   width: 80%;
   margin: 0 auto;
 }
-.register-modal .modal-body .content .modal-register .register-failed,
-.register-modal .modal-body .content .modal-register .register-success {
+
+.register-modal .modal-body .content .modal-register .register-failed, .register-modal .modal-body .content .modal-register .register-success {
   margin-bottom: 8px;
   color: #D4AF37;
   display: none;
@@ -404,8 +460,8 @@ section {
   -moz-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
-.register-modal .modal-body .content .modal-register .combo-box,
-.register-modal .modal-body .content .modal-register .input-box {
+
+.register-modal .modal-body .content .modal-register .combo-box, .register-modal .modal-body .content .modal-register .input-box {
   height: 48px;
   padding: 16px 24px;
   margin-bottom: 24px;
@@ -418,35 +474,47 @@ section {
   -moz-transition: all 0.1s ease-in-out;
   transition: all 0.1s ease-in-out;
 }
-.register-modal .modal-body .content .modal-register .combo-box:active, .register-modal .modal-body .content .modal-register .combo-box:focus,
-.register-modal .modal-body .content .modal-register .input-box:active,
-.register-modal .modal-body .content .modal-register .input-box:focus {
+
+.register-modal .modal-body .content .modal-register .combo-box:active, .register-modal .modal-body .content .modal-register .combo-box:focus, .register-modal .modal-body .content .modal-register .input-box:active, .register-modal .modal-body .content .modal-register .input-box:focus {
   outline: 0;
   box-shadow: none;
-  border: 1px solid #20202f;
+  border: 1px solid #000000;
 }
+
 .register-modal .modal-body .content .modal-register .combo-box {
   padding: 8px 24px;
 }
+
 .register-modal .modal-body .content .modal-register label {
   margin-bottom: 8px;
   font-weight: 400;
-  color: #20202f;
+  color: #000000;
 }
+
 .register-modal .modal-footer {
   border: none;
   text-align: center;
 }
 
+
 /* Registration Modal End */
+
+
 /*----------- Form Styles End -----------*/
+
+
 /*=============================================>>>>>
 = UI- Styles End =
 ===============================================>>>>>*/
+
+
 /*=============================================>>>>>
 = Section - Styles =
 ===============================================>>>>>*/
+
+
 /*----------  Navigation Style  ----------*/
+
 .sticky-navigation {
   min-height: 48px;
   background: #ffffff;
@@ -462,19 +530,23 @@ section {
   -moz-box-shadow: 0 0 16px 0 rgba(32, 32, 47, 0.16);
   box-shadow: 0 0 16px 0 rgba(32, 32, 47, 0.16);
 }
+
 .sticky-navigation .navbar-brand {
   height: 32px;
-  padding: 16px;
+  padding: 12px;
   margin: auto;
   -webkit-backface-visibility: hidden;
 }
+
 .sticky-navigation .eventster-nav .current a {
   color: #D4AF37;
 }
+
 .sticky-navigation .eventster-nav li a {
   height: 48px;
-  color: #20202f;
+  color: #000000;
 }
+
 .sticky-navigation .eventster-nav li a:active, .sticky-navigation .eventster-nav li a:focus, .sticky-navigation .eventster-nav li a:hover {
   color: #D4AF37;
   background-color: transparent;
@@ -482,16 +554,21 @@ section {
 
 .navbar-header .navbar-toggle {
   background: #ffffff;
-  color: #20202f;
+  color: #000000;
   border: none;
 }
+
 .navbar-header .navbar-toggle:focus, .navbar-header .navbar-toggle:hover, .navbar-header .navbar-toggle:active {
   background: transparent;
   color: #D4AF37;
 }
 
+
 /*----------  Navigation Style End  ----------*/
+
+
 /*----------- Hero Banner Styles -----------*/
+
 .hero {
   padding-top: 64px;
   position: relative;
@@ -500,38 +577,88 @@ section {
   background-position: top center;
   background-size: cover;
 }
+.hero:before{
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: rgba(0,0,0,0.2);
+}
 .hero .hero-content {
   height: 100%;
   padding-bottom: 160px;
   position: relative;
   z-index: 1;
 }
+
 .hero .logo {
   margin-bottom: 80px;
 }
+
 .hero .date-venue {
   display: inline-block;
   padding: 8px 40px;
   margin-bottom: 32px;
-  background-color: #ffffff;
+  /*background-color: #ffffff;*/
   color: #D4AF37;
 }
+
 .hero .intro {
-  margin-bottom: 80px;
+  margin-bottom: 50px;
 }
-.hero .intro h1,
-.hero .intro p {
+
+.hero .intro h1, .hero .intro p {
   color: #ffffff;
+  text-shadow: -1px 0 grey, 0 1px grey, 1px 0 grey, 0 -1px grey;
 }
+
 .hero .intro h1 {
-  margin: 0 0 32px;
+  margin: 0 0 16px;
+  display: inline-block;
+  padding-bottom: 5px;
+  position: relative;
 }
+
+.hero .intro h1:before{
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: 1px;
+  bottom: 0;
+  left: 25%;
+  border-bottom: 1px solid white;
+}
+
+.hero .intro h5,
+.hero .description h5{
+  color: white;
+}
+
+.hero .description h5 {
+  font-size: 1rem;
+  margin-bottom:20px;
+}
+
+.hero .description {
+  background: rgba(0, 0, 0, 0.7);
+  width: 75%;
+  margin: 0 auto;
+  text-align: left;
+  color: white;
+  margin-bottom: 50px;
+  padding: 30px 20px;
+}
+
 .hero .cta {
   margin-bottom: 80px;
 }
+
 .hero .cta .hero-video-subscription {
   margin-top: 48px;
 }
+
 .hero .countdown-card {
   width: 480px;
   position: absolute;
@@ -542,27 +669,34 @@ section {
   padding: 48px;
   background: #ffffff;
 }
+
 .hero .countdown-card .card-title {
   margin-bottom: 48px;
 }
+
 .hero .countdown-card .card-title h6 {
   color: #6b7684;
 }
+
 .hero .countdown-card .event-countdown {
   list-style-type: none;
   margin: 0 auto;
   padding: 0;
 }
+
 .hero .countdown-card .event-countdown :last-child {
   margin-right: 0;
 }
+
 .hero .countdown-card .event-countdown li {
   display: inline-block;
   margin-right: 48px;
 }
+
 .hero .countdown-card .event-countdown li span {
   margin-bottom: 16px;
 }
+
 @media only screen and (max-width: 479px) {
   .hero .countdown-card .event-countdown li {
     margin-right: 24px;
@@ -571,11 +705,13 @@ section {
     font-size: 1rem;
   }
 }
+
 @media only screen and (max-width: 320px) {
   .hero .countdown-card .event-countdown li {
     margin-right: 16px;
   }
 }
+
 @media only screen and (max-width: 479px) {
   .hero .countdown-card {
     width: 95%;
@@ -585,6 +721,7 @@ section {
     margin-bottom: 24px;
   }
 }
+
 @media only screen and (max-width: 479px) and (max-width: 320px) {
   .hero .countdown-card {
     padding: 24px 16px;
@@ -597,8 +734,12 @@ section {
   }
 }
 
+
 /*----------- Hero Banner Styles End -----------*/
+
+
 /*----------- Speakers Section Styles -----------*/
+
 .speakers {
   padding-top: 128px;
 }
@@ -606,20 +747,25 @@ section {
 .speaker-card {
   max-width: 263px;
 }
+
 .speaker-card .speaker-info {
   padding: 24px 16px;
 }
+
 .speaker-card .speaker-info::after {
   clear: both;
   content: "";
   display: table;
 }
+
 .speaker-card .speaker-info .speaker-social {
   text-align: right;
 }
+
 .speaker-card .speaker-info .speaker-social :last-child {
   margin-right: 0;
 }
+
 .speaker-card .speaker-info .speaker-social a {
   color: #6b7684;
   margin-right: 4px;
@@ -628,39 +774,50 @@ section {
   -moz-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
+
 .speaker-card .speaker-info .speaker-social a:hover {
   color: #D4AF37;
 }
+
 .speaker-card .speaker-description {
   text-align: left;
   padding: 0 16px 24px;
   font-style: italic;
 }
+
 @media only screen and (max-width: 991px) {
   .speaker-card {
     margin: 0 auto 48px;
   }
 }
 
+
 /*----------- Speakers Section End -----------*/
+
+
 /*----------- Schedule Section Styles -----------*/
+
 .schedule-multiday .timelines {
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
+
 .schedule-multiday .timelines li {
   display: inline-block;
   margin: 0 10px 32px;
 }
 
+
 /*=============================================>>>>>
 = Timeline Styles =
 ===============================================>>>>>*/
+
 .timeline ul {
   padding: 0;
   margin: 0;
 }
+
 .timeline ul li {
   list-style-type: none;
   position: relative;
@@ -669,6 +826,7 @@ section {
   padding-top: 50px;
   background: #e0dfe6;
 }
+
 .timeline ul li::after {
   content: '';
   position: absolute;
@@ -680,6 +838,7 @@ section {
   border-radius: 50%;
   background: inherit;
 }
+
 .timeline ul li div {
   position: relative;
   bottom: 0;
@@ -687,11 +846,13 @@ section {
   padding: 15px;
   text-align: left;
 }
+
 .timeline ul li div::after {
   clear: both;
   content: "";
   display: table;
 }
+
 .timeline ul li div::before {
   content: '';
   position: absolute;
@@ -700,6 +861,7 @@ section {
   height: 0;
   border-style: solid;
 }
+
 .timeline ul li div img {
   height: 80px;
   width: 80px;
@@ -707,27 +869,33 @@ section {
   border-radius: 50%;
   margin-right: 16px;
 }
+
 .timeline ul li div .time {
   font-size: 1rem;
   font-weight: 400;
   color: #D4AF37;
 }
+
 .timeline ul li:nth-child(odd) div {
   left: 50px;
 }
+
 .timeline ul li:nth-child(odd) div::before {
   left: -16px;
   border-width: 8px 16px 8px 0;
   border-color: transparent #ffffff transparent transparent;
 }
+
 .timeline ul li:nth-child(even) div {
   left: -450px;
 }
+
 .timeline ul li:nth-child(even) div::before {
   right: -15px;
   border-width: 8px 0 8px 16px;
   border-color: transparent transparent transparent #ffffff;
 }
+
 @media only screen and (max-width: 991px) {
   .timeline ul li div {
     width: 300px;
@@ -736,6 +904,7 @@ section {
     left: -350px;
   }
 }
+
 @media only screen and (max-width: 767px) {
   .timeline ul li {
     margin-left: 40px;
@@ -759,158 +928,252 @@ section {
     border-color: transparent #ffffff transparent transparent;
   }
 }
+
 @media only screen and (max-width: 479px) {
   .timeline ul li div {
     width: calc(100vw - 120px);
   }
 }
 
+
 /*----------- Venue Styles -----------*/
+
 .venue {
-  background-image: url("../img/venue-bg.jpg");
+  background-image: url("../img/venue-bg2.png");
   background-repeat: no-repeat;
   background-position: top center;
   background-size: cover;
 }
+
 .venue .venue-card {
   margin: 0 auto;
   padding: 64px 0;
 }
+
 .venue .venue-card .section-heading {
   margin-bottom: 48px;
 }
+
 .venue .venue-card .venue-address {
   margin-bottom: 48px;
 }
+
+.venue-address h6 {
+  margin-bottom: 5px;
+  font-size: 1.2rem;
+}
+
 @media only screen and (max-width: 767px) {
   .venue .venue-card {
     width: 75%;
   }
 }
+
 @media only screen and (max-width: 479px) {
   .venue .venue-card {
     width: 85%;
   }
 }
+
 @media only screen and (max-width: 320px) {
   .venue .venue-card {
     width: 90%;
   }
 }
 
+
 /*----------- Venue Styles End -----------*/
+
+
 /*----------- Recommended Hotel Styles -----------*/
+
 .hotels .hotel-card {
   margin-bottom: 32px;
 }
+
 .hotels .hotel-card .hotel-description {
   padding: 32px 32px 32px 24px;
   margin-left: 50%;
   background: #ffffff;
 }
+
 .hotels .hotel-card .hotel-description::after {
   clear: both;
   content: "";
   display: table;
 }
+
 .hotels .hotel-card .hotel-description .name-and-reservation {
   float: left;
   text-align: left;
 }
+
 .hotels .hotel-card .hotel-description .name-and-reservation h5 {
   margin-bottom: 16px;
 }
+
 .hotels .hotel-card .hotel-description .name-and-reservation a {
   color: #D4AF37;
 }
+
 .hotels .hotel-card .hotel-description .price-and-rating {
   float: right;
   text-align: right;
 }
+
 .hotels .hotel-card .hotel-description .price-and-rating h5 {
   margin-bottom: 16px;
 }
+
 .hotels .hotel-card .hotel-description .price-and-rating .currency {
   font-size: 1rem;
 }
+
 .hotels .hotel-card .hotel-description .price-and-rating .lnr {
   color: #D4AF37;
 }
+
 @media only screen and (max-width: 767px) {
   .hotels .hotel-card .hotel-description {
     margin-left: 0;
   }
 }
+
 @media only screen and (max-width: 767px) {
   .hotels .hotel-card {
     width: 90%;
     margin: 0 auto 32px;
   }
 }
+
 @media only screen and (max-width: 479px) {
   .hotels .hotel-card h5 {
     font-size: 1rem;
   }
 }
+
 .hotels .hotel-card-1 {
   background-image: url("../img/hotel-placeholder.jpg");
 }
+
 @media (min-resolution: 1.5dppx), (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
   .hotels .hotel-card-1 {
     background-image: url("../img/hotel-placeholder@2x.jpg");
   }
 }
+
 .hotels .hotel-card-2 {
   background-image: url("../img/hotel-placeholder.jpg");
 }
+
 @media (min-resolution: 1.5dppx), (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
   .hotels .hotel-card-2 {
     background-image: url("../img/hotel-placeholder@2x.jpg");
   }
 }
+
 .hotels .hotel-card-3 {
   background-image: url("../img/hotel-placeholder.jpg");
 }
+
 @media (min-resolution: 1.5dppx), (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
   .hotels .hotel-card-3 {
     background-image: url("../img/hotel-placeholder@2x.jpg");
   }
 }
+
 .hotels .hotel-card-4 {
   background-image: url("../img/hotel-placeholder.jpg");
   margin-bottom: 0;
 }
+
 @media (min-resolution: 1.5dppx), (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
   .hotels .hotel-card-4 {
     background-image: url("../img/hotel-placeholder@2x.jpg");
   }
 }
 
+
 /*----------- Recommended Hotel Styles  End -----------*/
+
+/*----------- Description Style -----------*/
+.description-card {
+  display: inline-flex;
+  background-color: #ffffff;
+  -webkit-box-shadow: 0 0 16px 0 rgba(32, 32, 47, 0.16);
+  -moz-box-shadow: 0 0 16px 0 rgba(32, 32, 47, 0.16);
+  box-shadow: 0 0 16px 0 rgba(32, 32, 47, 0.16);
+  margin: 0 auto;
+  padding: 30px;
+  width: 75%;
+}
+.description-image {
+  margin: auto;
+  padding: 0px;
+}
+.description-image img {
+  max-width: 100%;
+}
+.description-text {
+  text-align:left;
+  padding: 0px 0px 1px 30px;
+}
+
+.description-text h5 {
+  font-size: 1.5rem;
+}
+
+.desc-text {
+  margin: 20px 0;
+}
+
+@media only screen and (max-width: 991px) {
+  .description-card {
+    display: block;
+  }
+  .description-image {
+    margin-bottom: 20px;
+  }
+  .description-image img {
+    max-height: 300px;
+  }
+}
+
+/*----------- Description Style End -----------*/
+
+
 /*----------- Testimonials Styles -----------*/
+
 .testimonials .testimonial-carousel :last-child {
   margin-right: 0;
 }
+
 .testimonials .testimonial-carousel .testimonial-card {
   padding: 32px;
   margin: 0 12px 24px;
 }
+
 .testimonials .testimonial-carousel .testimonial-card .testimonial-img {
   margin-bottom: 16px;
 }
+
 .testimonials .testimonial-carousel .testimonial-card .testimonial-img img {
   border-radius: 50%;
   height: 64px;
   width: 64px;
 }
+
 .testimonials .testimonial-carousel .testimonial-card .testimonial-name {
   margin-bottom: 32px;
 }
+
 .testimonials .testimonial-carousel .testimonial-card .testimonial-comment {
   font-style: italic;
 }
 
+
 /* Owl Carousel Custom Styles */
+
 .grabbing {
   cursor: url("../img/grabbing.png") 8 8, move;
 }
@@ -930,37 +1193,50 @@ section {
   background: url("../img/AjaxLoader.gif") no-repeat center center;
 }
 
+
 /*----------- Testimonials Styles End -----------*/
+
+
 /*----------- Sponsors Styles -----------*/
+
 .sponsors .first-row {
   border-bottom: 1px solid #e0dfe6;
 }
+
 .sponsors .second-row {
   margin-bottom: 64px;
 }
-.sponsors .first-column,
-.sponsors .second-column {
+
+.sponsors .first-column, .sponsors .second-column {
   border-right: 1px solid #e0dfe6;
 }
+
 .sponsors .sponsor-img {
   padding: 80px 0;
 }
+
 @media only screen and (max-width: 991px) {
   .sponsors .sponsor-img {
     padding: 48px 0;
   }
 }
+
 @media only screen and (max-width: 991px) {
   .sponsors .first-row, .sponsors .first-column, .sponsors .second-column {
     border: none;
   }
 }
 
+
 /*----------- Sponsors Styles End -----------*/
+
+
 /*----------- Faq Section Styles -----------*/
+
 .faq-accordian :last-child {
   margin-bottom: 0;
 }
+
 @media only screen and (max-width: 767px) {
   .faq-accordian {
     width: 90%;
@@ -973,12 +1249,14 @@ section {
   box-shadow: 0 0 8px 0 rgba(32, 32, 47, 0.16);
   margin: 0 0 16px;
 }
+
 .panel a.panel-heading {
   display: block;
   position: relative;
   padding: 16px 24px;
   text-align: left;
 }
+
 .panel a.panel-heading:after {
   content: "";
   display: block;
@@ -995,12 +1273,14 @@ section {
   -o-transform: rotate(45deg);
   transform: rotate(45deg);
 }
+
 .panel a.panel-heading.collapsed:after {
   top: 20px;
   border: none;
   border-right: 1px solid #D4AF37;
   border-bottom: 1px solid #D4AF37;
 }
+
 @media only screen and (max-width: 767px) {
   .panel a.panel-heading {
     padding: 16px;
@@ -1012,78 +1292,104 @@ section {
     line-height: 1.5;
   }
 }
+
 .panel .panel-body {
   border-top: 1px solid #e0dfe6;
   padding: 24px;
   text-align: left;
 }
 
+
 /*----------- Faq Section Styles End -------*/
+
+
 /*----------- Pricing Styles -----------*/
+
 .pricing .price-table {
   padding-bottom: 32px;
 }
+
 @media only screen and (max-width: 991px) {
   .pricing .price-table {
     max-width: 350px;
     margin: 0 auto 48px;
   }
 }
+
 .pricing .table-header {
-  background: #20202f;
+  background: #000000;
   padding: 32px 0 48px;
 }
+
 .pricing .table-header .plan-name {
   text-transform: uppercase;
   letter-spacing: 0.2em;
   margin-bottom: 24px;
   color: #f6f6f8;
 }
-.pricing .table-header .currency,
-.pricing .table-header .price {
+
+.pricing .table-header .currency, .pricing .table-header .price {
   font-family: "Roboto Slab", serif;
   color: #ffffff;
 }
+
 .pricing .table-header .currency {
   font-size: 1.5rem;
 }
+
 .pricing .table-header .price {
   font-size: 3rem;
 }
+
 .pricing .table-body {
   padding: 0 8px;
 }
+
 .pricing .table-body .features {
   list-style-type: none;
   margin: 48px 0;
   padding: 0;
 }
+
 .pricing .table-body .features :last-child {
   margin-bottom: 0;
 }
+
 .pricing .table-body .features li {
   margin-bottom: 24px;
 }
 
+
 /*----------- Pricing Styles End -----------*/
-/*----------- Final CTA Styles -----------*/
-.final-cta {
-  padding: 48px 0;
-  background-color: #20202f;
-}
-.final-cta .cta-sentence {
-  color: #ffffff;
-  margin-bottom: 64px;
-}
+
 
 /*----------- Final CTA Styles -----------*/
+
+.final-cta {
+  padding: 48px 0;
+  background-color: #000000;
+}
+
+.final-cta .cta-sentence {
+  color: #ffffff;
+  /*margin-bottom: 64px;*/
+}
+
+
+/*----------- Final CTA Styles -----------*/
+
+
 /*----------- Conact and Map Styles -----------*/
+
+
 /* Contact and Map */
+
 .contact {
   padding: 64px 0;
   position: relative;
   /* map */
 }
+
 .contact #map {
   position: absolute;
   top: 0;
@@ -1091,6 +1397,7 @@ section {
   width: 50%;
   height: 100%;
 }
+
 @media only screen and (max-width: 991px) {
   .contact #map {
     top: 0;
@@ -1100,70 +1407,90 @@ section {
     height: 240px;
   }
 }
+
 .contact .contact-card {
   padding: 48px 24px;
 }
+
 .contact .contact-card .section-heading {
   margin-bottom: 48px;
 }
+
 @media only screen and (max-width: 991px) {
   .contact .contact-card {
     margin: 48px auto 0;
     width: 80%;
   }
 }
+
 @media only screen and (max-width: 479px) {
   .contact .contact-card {
     width: 90%;
   }
 }
+
 @media only screen and (max-width: 991px) {
   .contact {
     padding-top: 0;
   }
 }
 
+
 /*----------- Conact and Map Styles End -----------*/
+
+
 /*----------- Footer Styles -----------*/
+
 .eventster-footer {
   padding: 48px 0;
-  background-color: #20202f;
+  background-color: #000000;
   /* Copyright and back to top button */
 }
+
 .eventster-footer .logo {
   margin-bottom: 24px;
 }
+
 .eventster-footer .social-icons {
   margin-bottom: 32px;
 }
+
 .eventster-footer .social-icons .eventster-social {
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
+
 .eventster-footer .social-icons .eventster-social li {
   display: inline-block;
   margin: 0 8px 0 0;
 }
+
 .eventster-footer .social-icons .eventster-social li a {
   color: #f6f6f8;
   -webkit-transition: all 0.1s ease-in-out;
   -moz-transition: all 0.1s ease-in-out;
   transition: all 0.1s ease-in-out;
 }
+
 .eventster-footer .social-icons .eventster-social li a:active, .eventster-footer .social-icons .eventster-social li a:focus, .eventster-footer .social-icons .eventster-social li a:hover {
   color: #D4AF37;
 }
+
 .eventster-footer .copyright {
   color: #f6f6f8;
   margin-bottom: 48px;
 }
+
 .eventster-footer .back-to-top a {
   color: #ffffff;
   font-size: 2rem;
 }
 
+
 /*----------- Footer Styles End -----------*/
+
+
 /*=============================================>>>>>
 = Section - Styles End =
 ===============================================>>>>>*/
