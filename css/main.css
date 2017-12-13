@@ -1137,6 +1137,36 @@ section {
   .description-image img {
     max-height: 300px;
   }
+  .description-text {
+    text-align: left;
+    padding: 30px 20px;
+    font-size: .9rem;
+  }
+  .description-text h5 {
+    font-size: 1.3rem;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .description-card {
+    width: 75%;
+  }
+}
+
+@media only screen and (max-width: 479px) {
+  .description-card {
+    width: 85%;
+  }
+  .description-text {
+    padding: 30px 0px;
+    text-align: justify;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .description-card {
+    width: 90%;
+  }
 }
 
 /*----------- Description Style End -----------*/
