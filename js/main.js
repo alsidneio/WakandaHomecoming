@@ -206,7 +206,7 @@ function init() {
 
 
     // The latitude and longitude to center the map (always required)
-    center: new google.maps.LatLng(47.611697 , -122.33383), // Seattle
+    center: new google.maps.LatLng(47.702818 , -122.325011), // Seattle
 
     // How you would like to style the map.
     // This is where you would paste any style found on Snazzy Maps.
@@ -337,7 +337,7 @@ function init() {
 
   // Let's also add a marker while we're at it
   var marker = new google.maps.Marker({
-    position: new google.maps.LatLng(47.611697,-122.33383),
+    position: new google.maps.LatLng(47.702818,-122.325011),
     map: map,
     title: 'Eventster',
     icon: 'img/map-marker.png'
