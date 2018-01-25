@@ -115,3 +115,20 @@
   .square-effect:hover:before, .square-effect:hover:after, .square-effect:hover > span:before, .square-effect:hover > span:after {
     transform: translate(0, 0);
   }
+
+  .sponsor-btn{
+    background-color: #D4AF37;
+    color: #000;
+  }
+
+  label{
+    color: #fff;
+  }
+
+  .sponsorship{
+    margin-top:.7em; 
+  }
+
+  #sponsors{
+    margin: .3em 0 .3em 0;
+  }
