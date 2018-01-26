@@ -1,12 +1,20 @@
 {
-  "name": "eventster",
+  "name": "Wakanda-Homecoming",
   "version": "1.0.0",
-  "description": "Elegent fully responsive event landing page",
-  "main": "index.js",
+  "description": "Blickity-Black Event for the premier of Marvel's Black Panther",
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Pankaj Chakraborty <author@paperboatdesigns.co>",
+  
+  "keywords":[
+    "node",
+    "mongodb",
+    "mongoose",
+    "demo"
+  ],
+
+  "author": "Alsidneio Bell <alsidneio@gmail.com>",
   "license": "ISC",
   "devDependencies": {
     "browser-sync": "^2.18.13",
@@ -24,5 +32,8 @@
     "gulp-uglify": "^1.5.4",
     "minimatch": "^3.0.4"
   },
-  "dependencies": {}
+  "dependencies": {
+    "express": "^4.16.2",
+    "mongoose": "^5.0.1"
+  }
 }
