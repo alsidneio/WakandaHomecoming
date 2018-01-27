@@ -95,9 +95,9 @@
               <li><a href="#about">About</a></li>
               <li><a href="#schedule">Schedule</a></li>
               <li><a href="#venue">Venue</a></li>
-              <li><a href="#sponsors">Sponsors</a></li>
-              <li><a href="#faq">FAQ</a></li>
+              <li><a href="#faq">FAQ</a></li>          
               <li><a href="#tickets">Tickets</a></li>
+              <li><a href="#sponsors">Sponsors</a></li>
               <li><a href="#contact">Contact</a></li>
             </ul>
           </div>
@@ -112,7 +112,7 @@
           </div>
         </div>
         <div class="row">
-          <div class="cta">
+          <div class="vid">
             <a class="button-video" href="wakanda.mp4"><img src="img/play-icon.svg" alt="Play Video"></a>
             <div class="hero-video-subscription">
               <form id="subscribe-header" class="subscription-form form-inline">
@@ -327,37 +327,39 @@
   </section>
   <!-- Pricing Section End -->
 
-  <!-- Final CTA section -->
-  <section class="final-cta" id="final-cta">
-    <h4 class="cta-sentence">Want to Advertise Your Brand at This Event?</h4>
-    <h5 class="cta-sentence" id="sponsors">Contact Us!</h5>
-    <div class="row sponsorship">
-        <form class="form-inline">
-          <!--Gather Point of Contact-->
-          <label for="sponsorName" id="sponsorName">
-              <input type="text" name="Name" id="name" class="form-control" id="sponsorName" placeholder="Full Name">
-          </label>
+   <!-- CTA section -->
+  <section class="cta" id="sponsors">
+    <h4>Want to Advertise Your Brand at This Event?</h4>
+    <h5>Contact Us!</h5>
+    <div class="row sponsorship-form">
+        <form class="form-inline" action="">
+			<div class="input-group">
+			  <div class="input-group-addon"><i class="fa fa-user"></i> </div>
+			  <input type="text" class="form-control" id="name" name="name" placeholder="Full Name">
+			</div>
+			
+			<div class="input-group">
+			  <div class="input-group-addon"><i class="fa fa-building-o"></i> </div>
+			  <input type="text" class="form-control" id="business" name="business" placeholder="Business">
+			</div>
+			
+			<div class="input-group">
+			   <div class="input-group-addon"><i class="fa fa-envelope-o"></i> </div>
+			   <input class="form-control" id="email" name="email" type="email" placeholder="Email Address"/>
+			</div>
+			
+			<div class="input-group">
+			  <div class="input-group-addon"><i class="fa fa-phone"></i> </div>
+			  <input type="tel" class="form-control" id="phone" name="phone"  placeholder="Phone Number">
+			</div>
           
-          <!--Gather Sponsor Email-->
-          <label for="sponsorEmail" id=sponsorEmail>
-            <input type="email" name="Email" id="email" class="form-control" id="sponsorEmailInput" placeholder="Email">
-          </label>
+          	<button type="submit" class="btn sponsor-btn">Submit</button>
           
-          <!--Gather Business Name -->
-          <label for="sponsorBusiness" id=sponsorBusiness>
-            <input type="text" name="Business"id="business" class="form-control" id="sponsorBusiness" placeholder="Business Name">
-          </label>
-          
-          <label for="sponsorPhone" id=sponsorPhone>
-              <input type="tel" name="Phone" id="phone" class="form-control" id="sponsorPhone" placeholder="Phone Number">
-          </label>
-          <button type="submit" class="btn sponsor-btn">Submit</button>
-        </form>
-        
+          	<div id="emailResponse"> </div>
+        </form> 
       </div>
   </section>
-  
-  <!-- Final CTA section End -->
+  <!-- CTA Section End -->
   
   <section class="contact" id="contact">
     <div id="map"></div>
