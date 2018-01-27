@@ -1,0 +1,8 @@
+[25-Jan-2018 15:06:02 America/Chicago] PHP Warning:  mysqli::mysqli(): (42000/1044): Access denied for user 'osumac24_admin'@'localhost' to database 'osumac24_blackpanther' in /home1/osumac24/public_html/blackpanthersolitseattle.com/cgi-bin/sponsors.php on line 4
+[25-Jan-2018 15:06:02 America/Chicago] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /home1/osumac24/public_html/blackpanthersolitseattle.com/cgi-bin/sponsors.php on line 5
+[25-Jan-2018 15:57:52 America/Chicago] PHP Warning:  array_push() expects parameter 1 to be array, null given in /home1/osumac24/public_html/blackpanthersolitseattle.com/cgi-bin/sponsors.php on line 9
+[25-Jan-2018 15:57:52 America/Chicago] PHP Warning:  array_push() expects parameter 1 to be array, null given in /home1/osumac24/public_html/blackpanthersolitseattle.com/cgi-bin/sponsors.php on line 9
+[25-Jan-2018 17:36:25 America/Chicago] PHP Parse error:  syntax error, unexpected ''}'' (T_CONSTANT_ENCAPSED_STRING) in /home1/osumac24/public_html/blackpanthersolitseattle.com/cgi-bin/sponsors.php on line 44
+[25-Jan-2018 17:36:29 America/Chicago] PHP Parse error:  syntax error, unexpected ''}'' (T_CONSTANT_ENCAPSED_STRING) in /home1/osumac24/public_html/blackpanthersolitseattle.com/cgi-bin/sponsors.php on line 44
+[27-Jan-2018 03:48:52 America/Chicago] PHP Fatal error:  Call to a member function query() on null in /home1/osumac24/public_html/blackpanthersolitseattle.com/cgi-bin/sponsors.php on line 12
+[27-Jan-2018 03:50:02 America/Chicago] PHP Fatal error:  Call to a member function query() on null in /home1/osumac24/public_html/blackpanthersolitseattle.com/cgi-bin/sponsors.php on line 12

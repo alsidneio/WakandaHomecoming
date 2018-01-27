@@ -9,14 +9,14 @@ var path=require("path");
 /* Setting Up Connection to MongoDB
 /*====================================================*/
 var MongoClient= require("mongodb").MongoClient;
-var db
+var db;
 MongoClient.connect("mongodb://alsidneio:Morehouse2012@ds046867.mlab.com:46867/wakandahomecoming",(err,database)=>{
     if(err) return console.log(err)
-    db=database 
+    db=database.db("wakandahomecoming")
     app.listen(3000,()=>{
         console.log("listening on 3000")
-    })
-})
+    });
+});
 
 var app= express();
 app.use(bodyParser.json());

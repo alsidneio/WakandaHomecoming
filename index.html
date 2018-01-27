@@ -332,24 +332,24 @@
     <h4 class="cta-sentence">Want to Advertise Your Brand at This Event?</h4>
     <h5 class="cta-sentence" id="sponsors">Contact Us!</h5>
     <div class="row sponsorship">
-        <form method="POST" action="/addSponsor" class="form-inline">
+        <form class="form-inline">
           <!--Gather Point of Contact-->
-          <label for="sponsorName" id=sponsorName>
-              <input type="text" name="Name" class="form-control" id="sponsorName" placeholder="Full Name">
+          <label for="sponsorName" id="sponsorName">
+              <input type="text" name="Name" id="name" class="form-control" id="sponsorName" placeholder="Full Name">
           </label>
           
           <!--Gather Sponsor Email-->
           <label for="sponsorEmail" id=sponsorEmail>
-            <input type="email" name="Email" class="form-control" id="sponsorEmailInput" placeholder="Email">
+            <input type="email" name="Email" id="email" class="form-control" id="sponsorEmailInput" placeholder="Email">
           </label>
           
           <!--Gather Business Name -->
           <label for="sponsorBusiness" id=sponsorBusiness>
-            <input type="text" name="Business" class="form-control" id="sponsorBusiness" placeholder="Business Name">
+            <input type="text" name="Business"id="business" class="form-control" id="sponsorBusiness" placeholder="Business Name">
           </label>
           
           <label for="sponsorPhone" id=sponsorPhone>
-              <input type="tel" name="Phone" class="form-control" id="sponsorPhone" placeholder="Phone Number">
+              <input type="tel" name="Phone" id="phone" class="form-control" id="sponsorPhone" placeholder="Phone Number">
           </label>
           <button type="submit" class="btn sponsor-btn">Submit</button>
         </form>
@@ -396,6 +396,7 @@
   <script src="js/plugins/plugins.min.js"></script>
   <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
   <script src="js/main.js"></script>
+  <script src="js/sponsor.js"></script>
   <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDD0i3EXr2yuxUyAc8KXj-6N7ECwIuX7uA&callback=initMap"
   type="text/javascript"></script>
   
