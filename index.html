@@ -332,24 +332,24 @@
     <h4 class="cta-sentence">Want to Advertise Your Brand at This Event?</h4>
     <h5 class="cta-sentence" id="sponsors">Contact Us!</h5>
     <div class="row sponsorship">
-        <form method="post" action="/submit" class="form-inline">
+        <form method="POST" action="/addSponsor" class="form-inline">
           <!--Gather Point of Contact-->
           <label for="sponsorName" id=sponsorName>
-              <input type="text" class="form-control" id="sponsorName" placeholder="Full Name">
+              <input type="text" name="Name" class="form-control" id="sponsorName" placeholder="Full Name">
           </label>
           
           <!--Gather Sponsor Email-->
           <label for="sponsorEmail" id=sponsorEmail>
-            <input type="email" class="form-control" id="sponsorEmailInput" placeholder="Email">
+            <input type="email" name="Email" class="form-control" id="sponsorEmailInput" placeholder="Email">
           </label>
           
           <!--Gather Business Name -->
           <label for="sponsorBusiness" id=sponsorBusiness>
-            <input type="text" class="form-control" id="sponsorBusiness" placeholder="Business Name">
+            <input type="text" name="Business" class="form-control" id="sponsorBusiness" placeholder="Business Name">
           </label>
           
           <label for="sponsorPhone" id=sponsorPhone>
-              <input type="tel" class="form-control" id="sponsorPhone" placeholder="Phone Number">
+              <input type="tel" name="Phone" class="form-control" id="sponsorPhone" placeholder="Phone Number">
           </label>
           <button type="submit" class="btn sponsor-btn">Submit</button>
         </form>
