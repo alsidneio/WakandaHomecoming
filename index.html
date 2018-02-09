@@ -95,8 +95,9 @@
               <li><a href="#about">About</a></li>
               <li><a href="#schedule">Schedule</a></li>
               <li><a href="#venue">Venue</a></li>
-              <li><a href="#faq">FAQ</a></li>
+              <li><a href="#faq">FAQ</a></li>          
               <li><a href="#tickets">Tickets</a></li>
+              <li><a href="#sponsors">Sponsors</a></li>
               <li><a href="#contact">Contact</a></li>
             </ul>
           </div>
@@ -111,7 +112,7 @@
           </div>
         </div>
         <div class="row">
-          <div class="cta">
+          <div class="vid">
             <a class="button-video" href="wakanda.mp4"><img src="img/play-icon.svg" alt="Play Video"></a>
             <div class="hero-video-subscription">
               <form id="subscribe-header" class="subscription-form form-inline">
@@ -319,6 +320,71 @@
           <h4>Tickets</h4>
         </div>
       </div>
+      
+      <section class="final-cta" id="final-cta">
+        <h5 class="cta-sentence">Tickets are SOLD OUT but upgrades are available to current ticket holders. </h5> 
+        <h6 style="color:white"> If you purchased an upgrade, but there is no record of you holding a ticket, we will cancel the order.  
+          <br>Please read the ticket descriptions when upgrading. </h6>
+      </section>
+
+      <br><br>
+
+      <div class="row">
+        <div class="col-md-4">
+          <div class="price-table">
+            <div class="table-header">
+              <p class="plan-name">General</p>
+            </div>
+            <div class="table-body">
+              <ul class="features">
+                <li>Admission to Event</li>
+                <li>Cupcake</li>
+                <li>Champagne</li>
+				        <li>&nbsp;</li>
+                <li>&nbsp;</li>
+                <li>&nbsp;</li>
+                <li>&nbsp;</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="price-table">
+            <div class="table-header">
+              <p class="plan-name">Royal Court</p>
+            </div>
+            <div class="table-body">
+              <ul class="features">
+                <li>Admission to Event</li>
+                <li>Cupcake</li>
+                <li>Champagne</li>
+                <li>Soul Food Buffet</li>
+                <li>&nbsp;</li>
+                <li>&nbsp;</li>
+                <li>&nbsp;</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="price-table price-table-last">
+            <div class="table-header">
+              <p class="plan-name">VIP Gold</p>
+            </div>
+            <div class="table-body">
+              <ul class="features">
+                <li>Admission to Event</li>
+                <li>Cupcake</li>
+                <li>Champagne</li>
+                <li>Private, Extended Soul Food Buffet</li>
+                <li>Reserved Priority Seating <br> with Birthday Party</li>
+                <li>Open Bar</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br><br>
       <!-- Ticket Tailor Widget. Paste this in to your website where you want the widget to appear. Do no change the code or the widget may not work properly. -->
       <div class="tt-widget"><div class="tt-widget-fallback"><p><a href="https://www.tickettailor.com/new-order/131231/1044/ref/website_widget/" target="_blank">Click here to buy tickets</a><br /><small><a href="http://www.tickettailor.com?rf=wdg" class="tt-widget-powered">Sell tickets online with Ticket Tailor</a></small></p></div><script src="https://dc161a0a89fedd6639c9-03787a0970cd749432e2a6d3b34c55df.ssl.cf3.rackcdn.com/tt-widget.js" data-url="https://www.tickettailor.com/new-order/131231/1044/ref/website_widget/" data-type="inline" data-inline-minimal="false" data-inline-show-logo="true" data-inline-bg-fill="true"></script></div>
       <!-- End of Ticket Tailor Widget -->
@@ -326,11 +392,39 @@
   </section>
   <!-- Pricing Section End -->
 
-  <!-- Final CTA section -->
-  <section class="final-cta" id="final-cta">
-    <h4 class="cta-sentence">WE ARE SOLD OUT!!!</h4>
+   <!-- Final CTA section -->
+  <section class="final-cta" id="sponsors">
+    <h4>Want to Advertise Your Brand at This Event?</h4>
+    <h5>Contact Us!</h5>
+    <div class="row sponsorship-form">
+        <form class="form-inline" action="">
+			<div class="input-group sponsor-input">
+			  <div class="input-group-addon"><i class="fa fa-user"></i> </div>
+			  <input type="text" class="form-control" id="name" name="name" placeholder="Full Name">
+			</div>
+			
+			<div class="input-group sponsor-input">
+			  <div class="input-group-addon"><i class="fa fa-building-o"></i> </div>
+			  <input type="text" class="form-control" id="business" name="business" placeholder="Business">
+			</div>
+			
+			<div class="input-group sponsor-input">
+			   <div class="input-group-addon"><i class="fa fa-envelope-o"></i> </div>
+			   <input class="form-control" id="email" name="email" type="email" placeholder="Email Address"/>
+			</div>
+			
+			<div class="input-group sponsor-input">
+			  <div class="input-group-addon"><i class="fa fa-phone"></i> </div>
+			  <input type="tel" class="form-control" id="phone" name="phone"  placeholder="Phone Number">
+			</div>
+          
+          	<button type="submit" class="btn btn-default sponsor-btn">Submit</button>
+          
+          	<div id="emailResponse"> </div>
+        </form> 
+      </div>
   </section>
-  <!-- Final CTA section End -->
+  <!-- Final CTA Section End -->
   
   <section class="contact" id="contact">
     <div id="map"></div>
@@ -369,6 +463,7 @@
   <script src="js/plugins/plugins.min.js"></script>
   <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
   <script src="js/main.js"></script>
+  <script src="js/sponsor.js"></script>
   <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDD0i3EXr2yuxUyAc8KXj-6N7ECwIuX7uA&callback=initMap"
   type="text/javascript"></script>
   
