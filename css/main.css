@@ -651,11 +651,11 @@ section {
   padding: 30px 20px;
 }
 
-.hero .cta {
+.hero .vid {
   margin-bottom: 80px;
 }
 
-.hero .cta .hero-video-subscription {
+.hero .vid .hero-video-subscription {
   margin-top: 48px;
 }
 
@@ -1335,7 +1335,11 @@ section {
 /*----------- Pricing Styles -----------*/
 
 .pricing .price-table {
-  padding-bottom: 32px;
+  padding-bottom: 5px;
+}
+
+.pricing .price-table-last {
+  padding-bottom: 15px;
 }
 
 @media only screen and (max-width: 991px) {
@@ -1347,13 +1351,12 @@ section {
 
 .pricing .table-header {
   background: #000000;
-  padding: 32px 0 48px;
+  padding: 32px 0 32px;
 }
 
 .pricing .table-header .plan-name {
   text-transform: uppercase;
   letter-spacing: 0.2em;
-  margin-bottom: 24px;
   color: #f6f6f8;
 }
 
@@ -1385,7 +1388,7 @@ section {
 }
 
 .pricing .table-body .features li {
-  margin-bottom: 24px;
+  margin-bottom: 10px;
 }
 
 
@@ -1399,14 +1402,50 @@ section {
   background-color: #000000;
 }
 
-.final-cta .cta-sentence {
+.final-cta h1, .final-cta h2, .final-cta h3, .final-cta h4, .final-cta h5{
   color: #ffffff;
-  /*margin-bottom: 64px;*/
+  text-shadow: 1px 2px 0px #3e3e3e, 2px 2px 0px rgba(0, 0, 0, .1);
 }
 
+.final-cta h4 {
+    margin-bottom: 15px;
+}
 
-/*----------- Final CTA Styles -----------*/
+.final-cta h5 {
+    margin-bottom: 10px;
+}
 
+/*----------- Final CTA Styles End -----------*/
+
+/*----------- Sponsor List Styles -----------*/
+.sponsor-list-card {
+  background-color: #ffffff;
+  -webkit-box-shadow: 0 0 16px 0 rgba(32, 32, 47, 0.16);
+  -moz-box-shadow: 0 0 16px 0 rgba(32, 32, 47, 0.16);
+  box-shadow: 0 0 16px 0 rgba(32, 32, 47, 0.16);
+  margin: 0 auto;
+  padding: 30px;
+  width: 75%;
+}
+
+.sponsorship-form{
+    display: inline-block;
+}
+
+.sponsor-list-table>h5{
+    text-align:center;
+    margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 767px) {
+  .sponsor-input {
+    width: 75%;
+    margin: auto;
+    margin-bottom: 5px;
+  }
+}
+
+/*----------- Sponsor List Styles End-----------*/
 
 /*----------- Conact and Map Styles -----------*/
 
