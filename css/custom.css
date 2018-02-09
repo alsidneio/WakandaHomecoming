@@ -63,6 +63,12 @@
 
 .facebook { box-shadow: 8px 8px 10px #aaa; }
 
+@media only screen and (max-width: 991px) {
+  .facebook {
+  	margin: 50px auto;
+  }
+}
+
 .venue-address a, a > span {
   position: relative;
   color: inherit;
